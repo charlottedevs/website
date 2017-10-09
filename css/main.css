@@ -1,1 +1,82 @@
+body{
+  background-color: #333;
+  color:#EEE;}
+@media screen and (min-width: 481px) and (max-width:769px) {
+.landing{
+  position:relative;
+  background-image: url("../images/landing.jpeg");
+  height:100vh;
 
+}
+.landing-caption{
+  opacity:1;
+  position:absolute;
+top: 2vw;
+left: 7vw;
+font-family: 'Coda', cursive;
+color: #EEE;
+  text-shadow: 2px 2px 2vw #000000;
+  font-size: 16vw;
+  line-height:90%;
+
+}
+}
+
+@media screen and (min-width: 769px) {
+.landing{
+  position:relative;
+  background-image: url("../images/landing.jpeg");
+  height:100vh;
+  background-size: 100%;
+  background-repeat:no-repeat;
+
+}
+.landing-caption{
+  opacity:1;
+  position:absolute;
+top: 2vw;
+left: 7vw;
+font-family: 'Coda', cursive;
+color: #EEE;
+  text-shadow: 2px 2px 2vw #000000;
+  font-size: 9vw;
+  line-height:90%;
+
+}
+}
+@media screen and (max-width: 480px) {
+.landing{
+  position:relative;
+  background-image: url("../images/landing.jpeg");
+  height:100vh;
+  background-position:-300px;
+}
+.landing-caption{
+  opacity:1;
+  position:absolute;
+top: 2vw;
+left: 7vw;
+font-family: 'Coda', cursive;
+color: #EEE;
+  text-shadow: 2px 2px 2vw #000000;
+  font-size: 20vw;
+  line-height:90%;
+
+}
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 2px;
+    color:#EEE;
+}
+
+h1{
+  display: inline-block;
+  border-bottom: 5px solid #EEE;
+}
