@@ -12,7 +12,7 @@ var autoprefixer = require('gulp-autoprefixer');
 gulp.task('serve', ['sass'], function() {
 
     browserSync.init({
-        server: "./"
+        server: "./",
     });
 
     gulp.watch("./scss/**/*.scss", ['sass']);
@@ -25,7 +25,7 @@ gulp.task('plumber', ['sass'], function() {
         .pipe(sass())
         .pipe(uglify())
         .pipe(plumber.stop())
-        .pipe(gulp.dest('./'));
+        .pipe(gulp.dest('./dist'));
 });
 
 // Compile sass into CSS & auto-inject into browsers
