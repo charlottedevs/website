@@ -41,3 +41,4 @@ After discussion, we came to the conclusion that *this is a Charlotte Junior Dev
 * Forum (DO & Discourse) - perma-storage content suggestion
 * Feedback / Suggestion submission form
 * Pair Programming link-ups
+* Slack Channels Directory
