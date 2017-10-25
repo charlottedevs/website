@@ -1,1 +1,27 @@
+$color1: #000000;
+$color2: #000000;
+$color3: #000000;
+$font1: sans;
+$font2: monospace;
 
+.flex-1{}
+.flex-2{}
+.flex-3{}
+.
+
+.mid-box-paragraph{
+    position:absolute;
+    top:50%;
+    left:50%;
+    font-family:$font2;
+    color:$color2;
+    background-color:$color3;
+}
+/*keeps perspective on entire container*/
+.flip-container{
+    perspective:1000px;
+}
+/*flips pane on hover*/
+.flip-container:hover .flipper, .flip-container.hover .flipper{
+    transform:rotateY(180deg);
+}
