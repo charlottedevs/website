@@ -5,10 +5,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>Charlotte Junior Devs Site</title>
+
+  <meta property="og:title" content="Charlotte Junior Devs" />
+  <meta property="og:description" content="A group for developers in the Charlotte, NC area." />
+  <meta property="og:image" content="" /> <!--TODO-->
+  <meta property="og:image:width" content="" /><!--TODO-->
+  <meta property="og:image:height" content="" /> <!--TODO-->
+  <meta property="og:image:alt" content="Charlotte Junior Developers" />
+  <meta property="og:url" content="" /> <!--TODO-->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <title>Charlotte Junior Devse</title>
   <!-- CSS -->
-  <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/5.0.0/sanitize.min.css" />
+  <link href="./assets/css/main.css" rel="stylesheet">
+  <link rel="shortcut icon" href="images/favicon.png"><!--TODO-->
   <!--
     WARNING: Respond.js doesn't work if you view the page via file://
     HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
@@ -19,8 +30,93 @@
     <![endif]-->
 </head>
 <body>
-  <h1>Welcome</h1>
-<!-- Include any script files below here -->
+  <!-- <nav id="nav">
+    <div class="logo">
+      <h1>CLTJD</h1>
+    </div>
+    <div class="nav-links">
+      <ul>
+        <li class="nav-link">Home</li>
+        <li class="nav-link">Meetups</li>
+        <li class="nav-link">Users</li>
+      </ul>
+    </div>
+  </nav> -->
+  <header id="landing">
+    <div class="landing-container">
+      <h1>Welcome to Charlotte Junior Developers</h1>
+      <h2>A community that revolves around you</h2>
+    </div>
+  </header>
+  <main>
+    <section id="meetups">
+      <h1>Upcoming Meetups</h1>
+      <div class="meetup-container"></div>
+    </section>
+
+    <section id="user-sections">
+       <!--slack link-->
+       <div class="flex-3"><p class="mid-box-paragraph">Join us on Slack</p></divclass="">
+       <!--upcoming meetups-->
+       <div class="flex-3"><p class="mid-box-paragraph">Upcoming meetups</pclass="mid-box-paragraph"></div>
+       <!--sponsor a meetup-->
+       <div class="flex-3"><p class="mid-box-paragraph">Sponsor a meetup</p></div>
+       <!---Who we are-->
+       <div class="flex-1"><p class="mid-box-paragraph">Who we are</p></div>
+       <!---Working devs-->
+       <div class="flex-2">
+       <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+           <div class="flipper">
+               <div class="front">
+                   <!--front content-->
+               </div>
+               <div class="back">
+                   <!--back content-->
+               </div>
+           </div>
+           </div>
+       </div>
+       <!---Job-seekers-->
+       <div class="flex-2"><p class="mid-box-paragraph">Job-seekers</p></div>
+       <!---Learners-->
+       <div class="flex-2"><p class="mid-box-paragraph">Learners</p></div>
+       <!--Mentors-->
+       <div class="flex-2"><p class="mid-box-paragraph">Mentors</p></div>
+    </section>
+
+    <section id="mission">
+      <!--Mission statement/purpose-->
+      <div class="flex-1"><p class="mid-box-paragraph">Our mission/purpose</p></div>
+    </section>
+
+    <section id="sponsors">
+      <!--sponsors-->
+      <div class="flex-1"><p class="mid-box-paragraph">Sponsors</p></div>
+    </section>
+
+    <section id="projects">
+      <div class="flex-1"><p class="mid-box-paragraph">Current Projects</p></divclass="flex-1">
+      <div class="flex-3"><p class="mid-box-paragraph">The Survival Kit</p></div>
+      <div class="flex-3"><p class="mid-box-paragraph">This page</p></div>
+      <div class="flex-3"><p class="mid-box-paragraph">Meetup Map</p></divclass="flex-3">
+    </section>
+  </main>
+  
+  <footer>
+    <div class="slack">
+      <div class="form-container">
+        <h1>Join us on Slack</h1>
+        <form action="http://www.cltdevs.com/invite">
+          <input type="email" name="email" id="slack-email" placeholder="Enter your email">
+          <input type="submit" value="Join">
+        </form>
+      </div>
+    </div>
+    <h3>Charlotte Developer Community &copy 2017</h3>
+  </footer>
+  <!-- Include any script files below here -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="./assets/js/scripts.js"></script>
 </body>
 
 </html>

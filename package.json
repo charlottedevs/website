@@ -1,27 +1,29 @@
 {
   "name": "static-website",
-  "version": "1.0.0",
-  "description": "After discussion, we came to the conclusion that *this is a Charlotte Junior Devs focused website*",
+  "version": "2.0.0",
+  "description": "Charlotte Junior Devs Website",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/carlosmed/static-website.git"
+    "url": "git+https://github.com/cltdevs/static-website"
   },
-  "keywords": [],
+  "keywords": ["Charlotte", "Junior Developers", "Developers", "CLT Devs"],
   "author": "Carlos Medina <carlos.w.med@gmail.com> (http://carlos-medina.me)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/carlosmed/static-website/issues"
+    "url": "https://github.com/cltdevs/static-website/issues"
   },
-  "homepage": "https://github.com/carlosmed/static-website#readme",
+  "homepage": "https://github.com/cltdevs/static-website#readme",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^7.0.0",
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^3.1.0"
   }
