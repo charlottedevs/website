@@ -4,14 +4,29 @@
   "description": "Charlotte Junior Devs Website",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "build": "gulp build --prod",
+    "clean": "gulp clean",
+    "plumb": "gulp plumber"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cltdevs/static-website"
   },
-  "keywords": ["Charlotte", "Junior Developers", "Developers", "CLT Devs"],
+  "keywords": [
+    "Charlotte",
+    "Junior Developers",
+    "Developers",
+    "CLT Devs"
+  ],
   "author": "Carlos Medina <carlos.w.med@gmail.com> (http://carlos-medina.me)",
+  "contributors": [{
+    "name": "Chris Anthony",
+    "email": "ctanthny@gmail.com"
+    }, {
+    "name": "John Potts",
+    "email": "johndpotts@gmail.com"
+    }],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/cltdevs/static-website/issues"
@@ -21,10 +36,21 @@
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-babel": "^7.0.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.4.0",
     "gulp-plumber": "^1.1.0",
-    "gulp-sass": "^3.1.0"
-  }
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-useref": "^3.1.3",
+    "yargs": "^10.0.3"
+  },
+  "dependencies": {}
 }

@@ -45,16 +45,16 @@ At least initially, dynamic apps and content will be “linked” off from the m
 1. Download file from github by using
   - `git clone https://github.com/cltdevs/static-website.git`
   - Pressing the clone or download button on the top right
-1. Once downloaded and unzipped navigate into the folder
-1. Install dependencies by being in the root folder and typing
+2. Once downloaded and unzipped navigate into the folder
+3. Install dependencies by being in the root folder and typing
 
-   `npm i`
+   `npm i` or `yarn`
 
-1. Upon completion of dependencies installation run type the following into the terminal to start local server
+4. Upon completion of dependencies installation run type the following into the terminal to start local server
 
    `npm start`
 
-1. Send a pull request once you want to contribute
+5. Send a pull request once you want to contribute
 
 ### Design Resource
 [Figma Design and stylesheet](https://www.figma.com/file/QvR9WHgbL1RSCRY8ceLepBuE/Charlotte-Junior-Developer)
