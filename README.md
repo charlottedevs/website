@@ -1,5 +1,7 @@
 # CJD Website
 
+https://cltdevs.github.io/website/
+
 After discussion, we came to the conclusion that *this is a Charlotte Junior Devs focused website*
 
 ### Purpose
