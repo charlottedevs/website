@@ -19,26 +19,24 @@ const when = require('gulp-if');
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('styles', function () {
-    return gulp.src("./assets/scss/*.scss")
+    return gulp.src("./assets/stylesheets/scss/*.scss")
         .pipe(plumber())
         .pipe(sass())
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {
             cascade: true
         }))
-        .pipe(gulp.dest("./assets/css"))
-        .pipe(when(argv.prod, cssnano()))
+        .pipe(gulp.dest("./assets/stylesheets/css"))
         .pipe(when(argv.prod, gulp.dest('dist/assets/stylesheets')))
         .pipe(browserSync.stream());
 });
 
 gulp.task('scripts', function () {
-    return gulp.src("./assets/js/*.js")
+    return gulp.src("./assets/javascripts/*.js")
         .pipe(plumber())
         .pipe(babel({
             presets: ['env']
         }))
-        .pipe(gulp.dest("./assets/js"))
-        .pipe(when(argv.prod, uglify()))
+        .pipe(gulp.dest("./assets/javascripts"))
         .pipe(when(argv.prod, concat('index.js')))
         .pipe(when(argv.prod, gulp.dest('dist/assets/javascripts')))
         .pipe(browserSync.stream());
@@ -49,8 +47,8 @@ gulp.task('serve', ['styles'], function () {
     browserSync.init({
         server: "./",
     });
-    gulp.watch("./assets/scss/**/*.scss", ['styles']);
-    gulp.watch(["./*.html", "./assets/js/*.js"]).on('change', browserSync.reload);
+    gulp.watch("./assets/stylesheets/scss/**/*.scss", ['styles']);
+    gulp.watch(["./*.html", "./assets/javascripts/*.js"]).on('change', browserSync.reload);
 });
 
 // Gulp auto-reload
@@ -65,14 +63,14 @@ gulp.task('watch', function () {
 });
 
 // Call the plumber
-gulp.task('plumber', ['styles'], function () {
-    gulp.src('./src/*.scss')
-        .pipe(plumber())
-        .pipe(sass())
-        .pipe(uglify())
-        .pipe(plumber.stop())
-        .pipe(gulp.dest('./dist'));
-});
+// gulp.task('plumber', ['styles'], function () {
+//     gulp.src('./src/*.scss')
+//         .pipe(plumber())
+//         .pipe(sass())
+//         .pipe(uglify())
+//         .pipe(plumber.stop())
+//         .pipe(gulp.dest('./dist'));
+// });
 
 // Build tasks
 gulp.task('html', ['styles', 'scripts'], () => {
@@ -108,5 +106,9 @@ gulp.task('deploy', ['build'], function () {
     return gulp.src('./dist/**/*')
         .pipe(deploy());
 });
+/* Manual deploy
+git add dist && git commit -m "Initial dist subtree commit"
+git subtree push --prefix dist origin gh-pages
+*/
 
 gulp.task('default', ['serve', 'watch']);

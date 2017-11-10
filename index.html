@@ -18,7 +18,11 @@
   <title>Charlotte Junior Devs</title>
   <!-- CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/5.0.0/sanitize.min.css" />
-  <link href="./assets/css/main.css" rel="stylesheet">
+  <!-- gulp-useref block -->
+  <!-- build:css assets/stylesheets/main.css -->
+  <link href="./assets/stylesheets/css/main.css" rel="stylesheet">
+  <!-- endbuild -->
+
   <link rel="shortcut icon" href="images/favicon.png"><!--TODO-->
   <!--
     WARNING: Respond.js doesn't work if you view the page via file://
@@ -115,8 +119,11 @@
     <h3>Charlotte Developer Community &copy 2017</h3>
   </footer>
   <!-- Include any script files below here -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="./assets/js/scripts.js"></script>
+  <!-- gulp-useref block -->
+  <!-- build:js assets/javascripts/index.js -->
+  <script src="./assets/javascripts/index.js"></script>
+  <!-- endbuild -->
+  <script src="./assets/javascripts/index.js"></script>
 </body>
 
 </html>
