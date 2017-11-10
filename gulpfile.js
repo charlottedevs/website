@@ -10,6 +10,7 @@ const gulp = require('gulp');
 const htmlmin = require('gulp-htmlmin');
 const imagemin = require('gulp-imagemin');
 const plumber = require('gulp-plumber');
+const runSequence = require('gulp-run-sequence');
 const sass = require('gulp-sass');
 const spawn = require('child_process').spawn;
 const uglify = require('gulp-uglify');
@@ -99,7 +100,9 @@ gulp.task('images', function () {
 
 gulp.task('clean', del.bind(null, 'dist'));
 
-gulp.task('build', ['clean', 'html', 'images']);
+gulp.task('build', function (cb) {
+    runSequence('clean', 'images', 'html', cb);
+});
 
 // Deploy GH Pages
 gulp.task('deploy', ['build'], function () {

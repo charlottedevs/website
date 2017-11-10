@@ -21,17 +21,21 @@
     "CLT Devs"
   ],
   "author": "CLT Developers <cltdevelopers@gmail.com>",
-  "contributors": [{
-    "name": "Carlos Medina",
-    "email": "carlos.w.med@gmail.com",
-    "website": "http://carlos-medina.me"
-    }, {
-    "name": "Chris Anthony",
-    "email": "ctanthny@gmail.com"
-    }, {
-    "name": "John Potts",
-    "email": "johndpotts@gmail.com"
-    }],
+  "contributors": [
+    {
+      "name": "Carlos Medina",
+      "email": "carlos.w.med@gmail.com",
+      "website": "http://carlos-medina.me"
+    },
+    {
+      "name": "Chris Anthony",
+      "email": "ctanthny@gmail.com"
+    },
+    {
+      "name": "John Potts",
+      "email": "johndpotts@gmail.com"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/cltdevs/static-website/issues"
@@ -45,13 +49,14 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-babel": "^7.0.0",
-    "gulp-cssnano": "^2.1.2",
     "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
     "gulp-gh-pages": "^0.5.4",
     "gulp-htmlmin": "^3.0.0",
     "gulp-if": "^2.0.2",
     "gulp-imagemin": "^3.4.0",
     "gulp-plumber": "^1.1.0",
+    "gulp-run-sequence": "^0.3.2",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
     "gulp-useref": "^3.1.3",
