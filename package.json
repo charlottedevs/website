@@ -7,7 +7,8 @@
     "start": "gulp",
     "build": "gulp build --prod",
     "clean": "gulp clean",
-    "plumb": "gulp plumber"
+    "plumb": "gulp plumber",
+    "deploy": "gulp deploy --prod"
   },
   "repository": {
     "type": "git",
@@ -19,8 +20,12 @@
     "Developers",
     "CLT Devs"
   ],
-  "author": "Carlos Medina <carlos.w.med@gmail.com> (http://carlos-medina.me)",
+  "author": "CLT Developers <cltdevelopers@gmail.com>",
   "contributors": [{
+    "name": "Carlos Medina",
+    "email": "carlos.w.med@gmail.com",
+    "website": "http://carlos-medina.me"
+    }, {
     "name": "Chris Anthony",
     "email": "ctanthny@gmail.com"
     }, {

@@ -26,6 +26,7 @@ gulp.task('styles', function () {
             cascade: true
         }))
         .pipe(gulp.dest("./assets/css"))
+        .pipe(when(argv.prod, cssnano()))
         .pipe(when(argv.prod, gulp.dest('dist/assets/stylesheets')))
         .pipe(browserSync.stream());
 });
@@ -37,6 +38,7 @@ gulp.task('scripts', function () {
             presets: ['env']
         }))
         .pipe(gulp.dest("./assets/js"))
+        .pipe(when(argv.prod, uglify()))
         .pipe(when(argv.prod, concat('index.js')))
         .pipe(when(argv.prod, gulp.dest('dist/assets/javascripts')))
         .pipe(browserSync.stream());
