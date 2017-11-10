@@ -20,7 +20,6 @@ function logResults(json) {
         for (var i = 0; i < json.data.length; i++) {
             updateLayout(json.data[i]);
         }
-        updateLayout(json.data[1]);
     }
 
     itData(json);
