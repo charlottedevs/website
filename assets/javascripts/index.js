@@ -60,22 +60,3 @@ function logResults(json) {
         			});
 
         	});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*$.ajax({
-    url: 'https://api.meetup.com/charlottejuniordevs/events?photo-host=public&sig_id=182549128&sig=5e13646fba70874a21074c50827a5e377722fd01',
-    dataType: 'jsonp',
-    jsonpCallback: 'logResults'
-});*/
