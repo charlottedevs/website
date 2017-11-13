@@ -5,11 +5,11 @@ const browserSync = require('browser-sync').create();
 const cssnano = require('gulp-cssnano');
 const concat = require('gulp-concat');
 const del = require('del');
-const deploy = require('gulp-gh-pages');
 const gulp = require('gulp');
 const htmlmin = require('gulp-htmlmin');
 const imagemin = require('gulp-imagemin');
 const plumber = require('gulp-plumber');
+const run = require('gulp-run-command');
 const runSequence = require('gulp-run-sequence');
 const sass = require('gulp-sass');
 const spawn = require('child_process').spawn;
@@ -100,16 +100,20 @@ gulp.task('images', function () {
 
 gulp.task('clean', del.bind(null, 'dist'));
 
-gulp.task('build', function (cb) {
-    runSequence('clean', 'images', 'html', cb);
+gulp.task('build', function () {
+    runSequence('clean', 'images', 'html');
 });
 
 // Deploy GH Pages
-gulp.task('deploy', ['build'], function () {
-    return gulp.src('./dist/**/*')
-        .pipe(deploy());
-});
-/* Manual deploy
+// gulp.task('deploy', ['build'], function () {
+//     return gulp.src('./dist/**/*')
+//         .pipe(deploy());
+// });
+
+// Manual Deploy GH Pages
+// Make sure to git add and commit first
+gulp.task('deploy', ['build'], run('git subtree push --prefix dist origin gh-pages'));
+/* Command Reference:
 git add dist && git commit -m "Initial dist subtree commit"
 git subtree push --prefix dist origin gh-pages
 */
