@@ -16,7 +16,7 @@ $asset-base-path: '..' !default;
 /// @param {String} $type - Asset type, matching folder name
 /// @param {String} $file - Asset file name, including extension
 /// @return {URL} - A `()` function leading to the asset
-@function asset($type, $file) {
+@function asset_path($type, $file) {
   @return $asset-base-path + '/' + $type + '/' + $file;
 }
 
@@ -25,8 +25,8 @@ $asset-base-path: '..' !default;
 /// @param {String} $file - Asset file name, including extension
 /// @return {URL} - A `()` function leading to the image
 /// @require {function} asset
-@function image($file) {
-  @return asset('images', $file);
+@function image_path($file) {
+  @return asset_path('images', $file);
 }
 
 /// Font asset helper
@@ -34,6 +34,6 @@ $asset-base-path: '..' !default;
 /// @param {String} $file - Asset file name, including extension
 /// @return {URL} - A `()` function leading to the font
 /// @require {function} asset
-@function font($file) {
-  @return asset('fonts', $file);
+@function font_path($file) {
+  @return asset_path('fonts', $file);
 }
