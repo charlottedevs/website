@@ -54,7 +54,7 @@ form {
     width: 200px; }
 
 #landing {
-  background: url("../../images/landing.jpeg") center center no-repeat;
+  background: url("../images/landing.jpeg") center center no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
   position: relative;
