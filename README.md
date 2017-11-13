@@ -21,15 +21,17 @@ After discussion, we came to the conclusion that *this is a Charlotte Junior Dev
      - [ ] Meetup link buttons (Carlos)
      - [ ] Social links (Carlos)
 3. - [ ] User sections - Short text descriptions (see note below) about the types of people who would get value from the group
-      > 1. Working Devs
-      > 2. Job-seeking Devs
-      > 3. Learning-path Devs
-      > 4. Mentors
+      1. Working Devs
+      2. Job-seeking Devs
+      3. Learning-path Devs
+      4. Mentors
 4. - [ ] Mission statement and purpose
 5. - [ ] Sponsor attribution
 6. - [ ] Links to current / future content
      - [ ] Github Dev Survival Guide
      - [ ] Code Cred
+7. - Issues
+     - [ ] Different environment image path
 
 > _* Note on design decisions: The website is planned to evolve and the initial build will be static, while more dynamic content will be added later (see more below)
 At least initially, dynamic apps and content will be “linked” off from the main static page*_
