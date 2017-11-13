@@ -12,16 +12,19 @@ const imagemin = require('gulp-imagemin');
 const plumber = require('gulp-plumber');
 const runSequence = require('gulp-run-sequence');
 const sass = require('gulp-sass');
+const sassVars = require('gulp-sass-vars');
 const spawn = require('child_process').spawn;
 const uglify = require('gulp-uglify');
 const useref = require('gulp-useref');
 const when = require('gulp-if');
 
+const variables = { prod: argv.prod }
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('styles', function () {
     return gulp.src("./assets/stylesheets/scss/*.scss")
         .pipe(plumber())
+        .pipe(sassVars(variables))
         .pipe(sass())
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {
             cascade: true
@@ -44,7 +47,7 @@ gulp.task('scripts', function () {
 });
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['styles'], function () {
+gulp.task('serve', function () {
     browserSync.init({
         server: "./",
     });
@@ -78,7 +81,7 @@ gulp.task('html', ['styles', 'scripts'], () => {
   return gulp.src('./*.html')
     .pipe(useref())
     .pipe(when(/\.js$/, uglify({compress: {drop_console: true}})))
-    .pipe(when(/\.css$/, cssnano({safe: true, autoprefixer: false})))
+    .pipe(when(/\.css$/, cssnano({safe: true, normalizeUrl: false, autoprefixer: false})))
     .pipe(when(/\.html$/, htmlmin({
       collapseWhitespace: true,
       minifyCSS: true,
@@ -118,4 +121,6 @@ git add dist && git commit -m "Initial dist subtree commit"
 git subtree push --prefix dist origin gh-pages
 */
 
-gulp.task('default', ['serve', 'watch']);
+gulp.task('default', function () {
+    runSequence('clean', 'styles', 'serve', 'watch');
+});

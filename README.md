@@ -31,7 +31,7 @@ After discussion, we came to the conclusion that *this is a Charlotte Junior Dev
      - [ ] Github Dev Survival Guide
      - [ ] Code Cred
 7. - Issues
-     - [ ] Different environment image path
+     - [x] Different environment image path
 
 > _* Note on design decisions: The website is planned to evolve and the initial build will be static, while more dynamic content will be added later (see more below)
 At least initially, dynamic apps and content will be “linked” off from the main static page*_
