@@ -26,37 +26,35 @@ function logResults(json) {
 }
 
 //json p
-        (function(root) {
-        	root.fetchJsonP = function(url, options) {
-        		return new Promise(function(resolve, reject) {
-        			let script = document.createElement('script');
-        			let callbackName = 'cb' + String(Math.random()).slice(-6);
-        			url += ~url.indexOf('?') ? '&' : '?';
-        			url += 'callback=fetchJsonP.cbReg.' + callbackName;
-        			script.src = url;
-        			script.onload = function() {
-        				delete fetchJsonP.cbReg[callbackName];
-        				script.remove();
-        			};
-        			script.onerror = function() {
-        				delete fetchJsonP.cbReg[callbackName];
-        				script.remove();
-        				reject(new Error("o_O"));
-        			};
-        			fetchJsonP.cbReg[callbackName] = resolve;
-        			document.body.appendChild(script);
-        		});
-        	};
-        	root.fetchJsonP.cbReg = {};
-        })(window);
-        /* fetchJsonP */
+(function (root) {
+    root.fetchJsonP = function (url, options) {
+        return new Promise(function (resolve, reject) {
+            var script = document.createElement('script');
+            var callbackName = 'cb' + String(Math.random()).slice(-6);
+            url += ~url.indexOf('?') ? '&' : '?';
+            url += 'callback=fetchJsonP.cbReg.' + callbackName;
+            script.src = url;
+            script.onload = function () {
+                delete fetchJsonP.cbReg[callbackName];
+                script.remove();
+            };
+            script.onerror = function () {
+                delete fetchJsonP.cbReg[callbackName];
+                script.remove();
+                reject(new Error("o_O"));
+            };
+            fetchJsonP.cbReg[callbackName] = resolve;
+            document.body.appendChild(script);
+        });
+    };
+    root.fetchJsonP.cbReg = {};
+})(window);
+/* fetchJsonP */
 
-        /* DOMContentLoaded */
-        document.addEventListener('DOMContentLoaded', function() {
+/* DOMContentLoaded */
+document.addEventListener('DOMContentLoaded', function () {
 
-        			fetchJsonP('https://api.meetup.com/charlottejuniordevs/events?photo-host=public&sig_id=182549128&sig=5e13646fba70874a21074c50827a5e377722fd01')
-              .then(function(data) {
-        				logResults(data);
-        			});
-
-        	});
+    fetchJsonP('https://api.meetup.com/charlottejuniordevs/events?photo-host=public&sig_id=182549128&sig=5e13646fba70874a21074c50827a5e377722fd01').then(function (data) {
+        logResults(data);
+    });
+});
