@@ -1,0 +1,25 @@
+.user-section{
+  text-align: center;
+
+  img{
+    width:90%;
+    margin:auto;
+    margin-top:20px;
+  }
+
+  p{
+  margin:auto;
+  }
+
+  .col-sm-4 {
+  display:inline-block;
+  vertical-align:top;
+    width:30%;
+
+    @media screen and (max-width: $break-small) {
+    width: 100%;
+
+  }
+
+  }
+}

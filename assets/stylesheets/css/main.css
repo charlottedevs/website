@@ -54,7 +54,7 @@ form {
     width: 200px; }
 
 #landing {
-  background: url("../images/landing.jpeg") center center no-repeat;
+  background: url("../../images/landing.jpeg") center center no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
   position: relative;
@@ -208,3 +208,19 @@ footer .slack {
       footer .slack .form-container form input[type='submit'] {
         background: #454E57;
         color: #fff; }
+
+.user-section {
+  text-align: center; }
+  .user-section img {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px; }
+  .user-section p {
+    margin: auto; }
+  .user-section .col-sm-4 {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%; }
+    @media screen and (max-width: 600px) {
+      .user-section .col-sm-4 {
+        width: 100%; } }
