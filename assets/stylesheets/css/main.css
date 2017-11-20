@@ -55,6 +55,7 @@ form {
 
 #landing {
   background: url("../images/landing.jpeg") center center no-repeat;
+  background: url("http://res.cloudinary.com/charlotte-developers/image/upload/dpr_auto,f_auto,q_auto/v1511204771/landing.jpg") center center no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
   position: relative;
@@ -94,24 +95,6 @@ form {
     height: 100vh;
     position: absolute;
     z-index: -1; }
-
-.mid-box-paragraph {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-family: "Open Sans", sans-serif;
-  color: #708090;
-  background-color: #454E57; }
-
-/*keeps perspective on entire container*/
-.flip-container {
-  -webkit-perspective: 1000px;
-          perspective: 1000px; }
-
-/*flips pane on hover*/
-.flip-container:hover .flipper, .flip-container.hover .flipper {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg); }
 
 #meetups h1 {
   width: 100%;
@@ -157,13 +140,17 @@ form {
       background: #454E57;
       color: #fff; }
 
-@media screen and (min-width: 920px) {
-  .meetup {
-    -webkit-flex-basis: 50%;
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%; }
-    .meetup p {
-      width: 800px; } }
+.user-sections {
+  text-align: center; }
+  .user-sections img {
+    width: 90%;
+    margin: 20px auto auto; }
+  .user-sections p {
+    margin: auto; }
+  .user-sections .col-sm-4 {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%; }
 
 footer h1 {
   color: #454E57; }
@@ -208,3 +195,15 @@ footer .slack {
       footer .slack .form-container form input[type='submit'] {
         background: #454E57;
         color: #fff; }
+
+@media screen and (max-width: 600px) {
+  .user-section .col-sm-4 {
+    width: 100%; } }
+
+@media screen and (min-width: 920px) {
+  .meetup {
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%; }
+    .meetup p {
+      width: 800px; } }
