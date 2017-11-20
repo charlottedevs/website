@@ -1,0 +1,15 @@
+
+@media screen and (max-width: 600px) {
+  .user-section .col-sm-4 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 920px) {
+    .meetup {
+        flex-basis: 50%;
+        p {
+            width: 800px;
+        }
+    }
+}

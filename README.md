@@ -16,11 +16,11 @@ After discussion, we came to the conclusion that *this is a Charlotte Junior Dev
      - [x] Slack link section
      - [x] Meetup events calendar (use meetup api)
      - [x] Change meetup call to vanillaJS (John P)
-     - [ ] Add favicon
+     - [x] Add favicon
      - [ ] Nav Bar (Carlos)
      - [ ] Meetup link buttons (Carlos)
      - [ ] Social links (Carlos)
-3. - [ ] User sections - Short text descriptions (see note below) about the types of people who would get value from the group
+3. - [x] User sections - Short text descriptions (see note below) about the types of people who would get value from the group
       1. Working Devs
       2. Job-seeking Devs
       3. Learning-path Devs
