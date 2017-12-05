@@ -54,7 +54,7 @@ form {
     width: 200px; }
 
 #landing {
-  background: url("../images/landing.jpeg") center center no-repeat;
+  background: url("../../images/landing.jpeg") center center no-repeat;
   background: url("http://res.cloudinary.com/charlotte-developers/image/upload/dpr_auto,f_auto,q_auto/v1511204771/landing.jpg") center center no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
