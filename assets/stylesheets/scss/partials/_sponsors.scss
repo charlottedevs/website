@@ -1,11 +1,19 @@
 #sponsors {
+	p {
+		margin:auto;
+	}
 	.sponsors-container {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		align-items: baseline;
-	}
-	.sponsor {
-
+		justify-content: center;
+		align-items: center;
+		width:100%;
+		padding:20px 20%;
+		.sponsor {
+			display: flex;
+			padding:5px;
+			width: 25%;
+		}
 	}
 }
