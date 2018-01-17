@@ -51,10 +51,28 @@ function logResults(json) {
 })(window);
 /* fetchJsonP */
 
+function getImages() {
+    var dir = "assets/images/sponsors";
+    var fileextension = ".png";
+    $.ajax({
+        //This will retrieve the contents of the folder if the folder is configured as 'browsable'
+        url: dir,
+        success: function (data) {
+            console.log(data)
+            //List all .png file names in the page
+            // $(data).find("a:contains(" + fileextension + ")").each(function () {
+            //     var filename = this.href.replace(window.location.host, "").replace("http://", "");
+            //     $("body").append("<img src='" + dir + filename + "'>");
+            // });
+        }
+    }); 
+}
+
 /* DOMContentLoaded */
 document.addEventListener('DOMContentLoaded', function () {
 
     fetchJsonP('https://api.meetup.com/charlottejuniordevs/events?photo-host=public&sig_id=182549128&sig=5e13646fba70874a21074c50827a5e377722fd01').then(function (data) {
         logResults(data);
     });
+    getImages();
 });
