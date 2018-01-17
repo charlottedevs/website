@@ -1,19 +1,18 @@
-#meetups {
-    h1 {
-        
+#mission {
+    h2 {
         width: 100%;
         margin: 0;
         background: $gray;
-        color: $dark;
+        color: red;
         padding: 20px 0;
     }
-    h2 {
+    h3 {
         padding: 0 20px;
     }
-    .meetup-container {
+    .mission-container {
         display: flex;
         flex-wrap: wrap;
-        .meetup {
+        .mission {
             display: flex;
             flex-direction: column;
             flex-grow: 1;
@@ -22,10 +21,6 @@
             padding: 40px 0;
             p {
                 width: 100%;
-            }
-            &:nth-child(2n + 2) {
-                background: $dark;
-                color: $white;
             }
         }
     }
