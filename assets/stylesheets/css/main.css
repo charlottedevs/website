@@ -143,7 +143,6 @@ form {
 #mission h2 {
   width: 100%;
   margin: 0;
-  background: #E4E7EB;
   color: #454E57;
   padding: 20px 0; }
 
@@ -179,7 +178,8 @@ form {
     color: #454e57;
     padding: 40px 0; }
     #mission .mission-container .mission p {
-      width: 100%; }
+      margin-right: auto;
+      margin-left: auto; }
 
 .user-sections {
   text-align: center; }

@@ -2,7 +2,6 @@
     h2 {
         width: 100%;
         margin: 0;
-        background: $gray;
         color: $dark;
         padding: 20px 0;
     }
@@ -20,7 +19,8 @@
             color: #454e57;
             padding: 40px 0;
             p {
-                width: 100%;
+                margin-right:auto;
+                margin-left:auto;
             }
         }
     }
