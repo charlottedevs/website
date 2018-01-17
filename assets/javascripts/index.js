@@ -52,20 +52,12 @@ function logResults(json) {
 /* fetchJsonP */
 
 function getImages() {
-    var dir = "assets/images/sponsors";
+    var dir = "./assets/images/sponsors/levvel.png";
     var fileextension = ".png";
-    $.ajax({
-        //This will retrieve the contents of the folder if the folder is configured as 'browsable'
-        url: dir,
-        success: function (data) {
-            console.log(data)
-            //List all .png file names in the page
-            // $(data).find("a:contains(" + fileextension + ")").each(function () {
-            //     var filename = this.href.replace(window.location.host, "").replace("http://", "");
-            //     $("body").append("<img src='" + dir + filename + "'>");
-            // });
-        }
-    }); 
+    fetch(dir).then(res => {
+        res.blob()
+    })
+    .then(data => console.log(data))
 }
 
 /* DOMContentLoaded */
