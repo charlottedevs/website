@@ -27,25 +27,18 @@
   }
 }
 
+
 @media screen and (min-width: 920px) {
     .meetup {
         flex-basis: 50%;
         p {
-            max-width: 800px;
+            width: 800px;
         }
     }
     .mission {
         flex-basis: 50%;
         p {
-            max-width: 800px;
+            width: 800px;
         }
     }
-    #sponsors {
-		.sponsors-container {
-			padding:20px 10%;
-			.sponsor {
-				width:33%;
-			}
-		}
-  }
 }

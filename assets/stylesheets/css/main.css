@@ -277,14 +277,10 @@ footer .slack {
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%; }
     .meetup p {
-      max-width: 800px; }
+      width: 800px; }
   .mission {
     -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%; }
     .mission p {
-      max-width: 800px; }
-  #sponsors .sponsors-container {
-    padding: 20px 10%; }
-    #sponsors .sponsors-container .sponsor {
-      width: 33%; } }
+      width: 800px; } }
