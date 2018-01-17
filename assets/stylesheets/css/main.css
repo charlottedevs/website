@@ -198,8 +198,8 @@ form {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    padding: 5px;
-    width: 25%; }
+    padding: 5px 20px;
+    width: 33%; }
 
 .user-sections {
   text-align: center; }
@@ -263,6 +263,7 @@ footer .slack {
   #sponsors .sponsors-container {
     padding: 20px 5%; }
     #sponsors .sponsors-container .sponsor {
+      padding: 20px 0px;
       width: auto;
       max-width: 100%;
       max-height: 250px; }
