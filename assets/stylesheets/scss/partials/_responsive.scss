@@ -1,12 +1,42 @@
 
 @media screen and (max-width: 600px) {
-  .user-section .col-sm-4 {
-    width: 100%;
+  #user-sections {
+  	.user-sections .col-sm-4 {
+    	width: 100%;
+  	}
+  }
+  #sponsors {
+	.sponsors-container {
+		padding:20px 5%;
+		.sponsor {
+			padding: 20px 0px;
+			width:auto;
+			max-width:100%;
+			max-height:250px;
+		}
+	}
+  }
+  .mission {
+      p {
+          max-width: 80%;
+      }
+  }
+  #meetups .meetup-container .meetup {
+      p {
+          max-width: 80%;
+      }
   }
 }
 
+
 @media screen and (min-width: 920px) {
     .meetup {
+        flex-basis: 50%;
+        p {
+            width: 800px;
+        }
+    }
+    .mission {
         flex-basis: 50%;
         p {
             width: 800px;

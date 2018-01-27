@@ -1,0 +1,12 @@
+#mission {
+    .mission-container {
+        display: flex;
+        flex-wrap: wrap;
+        .mission {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            align-items: center;
+        }
+    }
+}
