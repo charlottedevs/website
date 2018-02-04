@@ -1,10 +1,11 @@
 // Modules
-@import './modules/path_helpers';
-@import './modules/colors';
-@import './modules/font';
-@import './modules/form';
+@import './modules/_path_helpers';
+@import './modules/_colors';
+@import './modules/_font';
+@import './modules/_form';
 
 // Partials
+@import './partials/_global';
 // @import './partials/_nav';
 @import './partials/_header';
 @import './partials/_meetups';

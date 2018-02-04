@@ -1,5 +1,6 @@
-.user-sections {
+.users {
   text-align: center;
+  padding: 15px;
 
   img {
     width: 90%;
@@ -10,9 +11,12 @@
     margin: auto;
   }
 
-  .col-sm-4 {
+  .info {
     display: inline-block;
-    vertical-align: top;
-    width: 30%;
   }
+  // .col-sm-4 {
+  //   display: inline-block;
+  //   vertical-align: top;
+  //   width: 30%;
+  // }
 }
