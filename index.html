@@ -70,12 +70,13 @@
     </header>
 
     <main>
-
+      <!-- Meetups API -->
       <section id="meetups" class="meetups scrollto">
         <h1 class="section-title">Upcoming Meetups</h1>
         <div class="meetup-container"></div>
       </section>
 
+      <!-- Users -->
       <section id="user-section" class="users scrollto">
         <div class="row clearfix">
           <div class="section-heading">
@@ -88,7 +89,7 @@
               this group you will have a place to ask questions and find guidance on everything from coding to interview prep. </p>
           </div>
           <div class="col-3 info">
-            <img src="http://res.cloudinary.com/charlotte-developers/image/upload/dpr_auto,f_auto,q_auto/v1511204746/coding.jpg" class="" alt="actively coding" />
+            <img src="http://res.cloudinary.com/charlotte-developers/image/upload/dpr_auto,f_auto,q_auto,c_scale/v1511204746/coding.jpg" class="" alt="actively coding" />
             <h3>Junior Developers</h3>
             <p>
               In your first few years working as a developer it is vital to keep networking, learning, and growing. This community is a great place to stay connected with the Charlotte area tech community.
@@ -100,71 +101,83 @@
             <p>
               If you're an experienced developer, this group is a great place for you to give back to the Charlotte area tech community. Remember, teaching is one of the best ways to keep learning!
             </p>
-          </div> <!-- end row -->
-        </div>
-      </section>
-
-      <section id="mission">
-        <!--Mission statement/purpose-->
-        <h2>What We're About</h2>
-        <div class="mission-container">
-          <div class="mission">
-            <p>Our mission is to grow Charlotte's tech community by bringing together developers of all skill levels and interests.</p>
-            <p>
-              While other meetup groups in Charlotte are focused on discussing and improving particular skillsets, we want to bring the whole community together through interactions. The more we faciliatate interaction between developers of all skill levels, the greater the community we can build.
-            </p>
-            <p>
-              We have a soft spot in our hearts for <strong>junior developers</strong> for two reasons. First, we're all junior developers in one area or another. While you may be proficient in Ruby, if you are a noob in React, here you'll be right at home with others who are proud to be still learning. Second, having a group dedicated to junior developers is a way of welcoming the next generation of developers into the fold of existing ones.
-            </p>
           </div>
-        </div>
+        </div> <!-- end row -->
       </section>
 
-      <section id="sponsors"> <!-- id="clients" class="scrollto clearfix" -->
+      <!--Mission statement/purpose-->
+      <section id="mission" class="mission scrollto">
+        <div class="row clearfix">
+          <div class="section-heading">
+            <h2 class="section-title">What We're About</h2>
+          </div>
+          <div class="mission-container">
+            <div class="mission">
+              <p>Our mission is to grow Charlotte's tech community by bringing together developers of all skill levels and interests.</p>
+              <p>
+                While other meetup groups in Charlotte are focused on discussing and improving particular skillsets, we want to bring the whole community together through interactions. The more we faciliatate interaction between developers of all skill levels, the greater the community we can build.
+              </p>
+              <p>
+                We have a soft spot in our hearts for <strong>junior developers</strong> for two reasons. First, we're all junior developers in one area or another. While you may be proficient in Ruby, if you are a noob in React, here you'll be right at home with others who are proud to be still learning. Second, having a group dedicated to junior developers is a way of welcoming the next generation of developers into the fold of existing ones.
+              </p>
+            </div>
+          </div>
+        </div> <!-- end row -->
+      </section>
+
+      <!-- Sponsors -->
+      <section id="sponsors" class="sponsors scrollto"> <!-- id="clients" class="scrollto clearfix" -->
         <!-- <div class="row clearfix">
           <div class="col">
             <img class="col-3" />
           </div>
         </div> -->
-        <h2>Sponsors</h2>
-        <p>Charlotte Devs extends a big thank-you to all its sponsors.</p>
-        <div class="sponsors-container">
-          <img class="sponsor" src="./assets/images/sponsors/accruepartners.png" alt="Accue Partners logo">
-          <img class="sponsor" src="./assets/images/sponsors/girl-development-it.jpg" alt="Girl Develop It logo">
-          <img class="sponsor" src="./assets/images/sponsors/levvel.png" alt="Levvel logo">
-          <img class="sponsor" src="./assets/images/sponsors/red-ventures.png" alt="Red Ventures logo">
-          <img class="sponsor" src="./assets/images/sponsors/signature-consultants.gif" alt="Signature Consultants logo">
-          <img class="sponsor" src="./assets/images/sponsors/skookum.png" alt="Skookum logo">
-          <img class="sponsor" src="./assets/images/sponsors/tech-incubator.jpg" alt="Tech Incubator logo">
-          <img class="sponsor" src="./assets/images/sponsors/tek-systems.jpg" alt="TEK Systems logo">
-          <img class="sponsor" src="./assets/images/sponsors/wray-ward.jpg" alt="Wray Ward logo">
+        <div class="row clearfix">
+          <div class="section-heading">
+            <h2 class="section-title">Sponsors</h2>
+            <h3 class="section-subtitle">Charlotte Devs extends a big thank-you to all its sponsors</h3>
           </div>
+          <div class="sponsors-container">
+            <img class="sponsor" src="./assets/images/sponsors/accruepartners.png" alt="Accue Partners logo">
+            <img class="sponsor" src="./assets/images/sponsors/girl-development-it.jpg" alt="Girl Develop It logo">
+            <img class="sponsor" src="./assets/images/sponsors/levvel.png" alt="Levvel logo">
+            <img class="sponsor" src="./assets/images/sponsors/red-ventures.png" alt="Red Ventures logo">
+            <img class="sponsor" src="./assets/images/sponsors/signature-consultants.gif" alt="Signature Consultants logo">
+            <img class="sponsor" src="./assets/images/sponsors/skookum.png" alt="Skookum logo">
+            <img class="sponsor" src="./assets/images/sponsors/tech-incubator.jpg" alt="Tech Incubator logo">
+            <img class="sponsor" src="./assets/images/sponsors/tek-systems.jpg" alt="TEK Systems logo">
+            <img class="sponsor" src="./assets/images/sponsors/wray-ward.jpg" alt="Wray Ward logo">
+          </div>
+        </div> <!-- end row -->
+      </section>
 
+      <!-- Slack -->
+      <section id="slack" class="slack scrollto">
+        <div class="row clearfix">
+          <div class="slack">
+            <div class="form-container">
+              <h2>Join us on Slack</h2>
+              <form action="http://www.cltdevs.com/invite">
+                <input type="email" name="email" id="slack-email" placeholder="Enter your email">
+                <input type="submit" value="Join">
+              </form>
+            </div>
+          </div>
         </div>
       </section>
 
+    </main>
+
+    <footer>
       <!--<section id="projects">
         <div class="flex-1"><p class="mid-box-paragraph">Current Projects</p></divclass="flex-1">
         <div class="flex-3"><p class="mid-box-paragraph">The Survival Kit</p></div>
         <div class="flex-3"><p class="mid-box-paragraph">This page</p></div>
         <div class="flex-3"><p class="mid-box-paragraph">Meetup Map</p></divclass="flex-3">
       </section> -->
-    </main>
-
-    <footer>
-      <div class="slack">
-        <div class="form-container">
-          <h2>Join us on Slack</h2>
-          <form action="http://www.cltdevs.com/invite">
-            <input type="email" name="email" id="slack-email" placeholder="Enter your email">
-            <input type="submit" value="Join">
-          </form>
-        </div>
-      </div>
       <h3>Charlotte Developer Community &copy 2017</h3>
     </footer>
-  <!-- End Wrapper -->
-  </div>
+  </div> <!-- End Wrapper -->
 
   <!-- jquery cdn -->
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>

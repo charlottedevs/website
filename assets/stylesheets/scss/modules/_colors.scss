@@ -2,3 +2,13 @@ $dark: #454E57;
 $light: #708090;
 $gray:  #E4E7EB;
 $white: #fff;
+
+.section-heading h2:after {
+    background: #d2b356;
+    margin-left: 45.25%;
+    content: "";
+    display: block;
+    width: 3.5em;
+    height: .1em;
+    margin-top: 15px;
+}

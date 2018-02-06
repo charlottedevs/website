@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:500,700');
 
-$Main-font: 'Roboto', sans-serif;
-$Secondary-font: 'Open Sans', sans-serif;
+$Main-font: 'Roboto', sans-serif, Helvetica;
+$Secondary-font: 'Open Sans', sans-serif, Arial;
+
+body {
+    font-family: $Main-font;
+    font-size:15px;
+    font-weight:normal;
+    color:#111;
+}
 
 h1 {
     font-size: 3em;
@@ -38,7 +45,23 @@ p {
     max-width: 60%;
 }
 
-// 
+/* Section Title and Subtitle */
+
+.section-title {
+    font-family: $Main-font;
+    font-size: 34px;
+    font-weight:700;
+    color:#111;
+}
+
+.section-subtitle {
+    font-family: $Secondary-font;
+    font-size: 16px;
+    font-weight:300;
+    color:#9c9c9c;
+}
+
+//
 // h1 {
 //     padding: 20px 0;
 // }

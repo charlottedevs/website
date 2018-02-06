@@ -1,14 +1,29 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:500,700");
+.section-heading h2:after {
+  background: #d2b356;
+  margin-left: 45.25%;
+  content: "";
+  display: block;
+  width: 3.5em;
+  height: .1em;
+  margin-top: 15px; }
+
+body {
+  font-family: "Roboto", sans-serif, Helvetica;
+  font-size: 15px;
+  font-weight: normal;
+  color: #111; }
+
 h1 {
   font-size: 3em;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif, Helvetica;
   letter-spacing: 1.2px;
   text-align: center;
   font-weight: 700; }
 
 h2 {
   font-size: 1.5em;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif, Helvetica;
   letter-spacing: 1.2px;
   line-height: 1.3em;
   text-align: center;
@@ -16,19 +31,32 @@ h2 {
 
 h3 {
   font-size: 1.2em;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif, Helvetica;
   letter-spacing: 1.2px;
   text-align: center;
   font-weight: 500; }
 
 p {
   font-size: 0.85em;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif, Arial;
   letter-spacing: 1.2px;
   line-height: 1.5em;
   text-align: center;
   font-weight: 300;
   max-width: 60%; }
+
+/* Section Title and Subtitle */
+.section-title {
+  font-family: "Roboto", sans-serif, Helvetica;
+  font-size: 34px;
+  font-weight: 700;
+  color: #111; }
+
+.section-subtitle {
+  font-family: "Open Sans", sans-serif, Arial;
+  font-size: 16px;
+  font-weight: 300;
+  color: #9c9c9c; }
 
 form {
   margin-bottom: 33.6px;
@@ -667,7 +695,8 @@ blockquote {
   padding: 15px; }
   .users img {
     width: 90%;
-    margin: 20px auto auto; }
+    min-height: 17vw;
+    margin: 0em auto 1.5em; }
   .users p {
     margin: auto; }
   .users .info {
@@ -701,7 +730,7 @@ footer .slack {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif, Arial;
   font-weight: 400; }
   footer .slack .form-container {
     margin: 150px 0;

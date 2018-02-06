@@ -89,20 +89,19 @@ figure {
     top: 0;
 }
 
-.page-border .top-border {
-    top: 0;
-}
-
-.page-border .right-border {
-    right: 0;
-}
-
-.page-border .bottom-border {
-    bottom: 0;
-}
-
-.page-border .left-border {
-    left: 0;
+.page-border {
+    .top-border {
+        top: 0;
+    }
+    .right-border {
+        right: 0;
+    }
+    .bottom-border {
+        bottom: 0;
+    }
+    .left-border {
+        left: 0;
+    }
 }
 
 #wrapper {
