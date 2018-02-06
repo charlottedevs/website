@@ -124,7 +124,7 @@ section {
 .row {
     max-width: 1245px;
     margin: 0 auto;
-    padding: 75px 0;
+    padding: 1.75em 0em;
     position: relative;
 }
 
@@ -165,72 +165,72 @@ section {
 
 /* --------- 2.3 Col Main Widths --------- */
 
-.col-1 {
+.col-1-lg {
     width: 100%;
 }
 
-.col-2 {
+.col-2-lg {
     width: 50%;
 }
 
-.col-3 {
+.col-3-lg {
     width: 33.33%;
 }
 
-.col-4 {
+.col-4-lg {
     width: 25%;
 }
 
-.col-5 {
+.col-5-lg {
     width: 20%;
 }
 
-.col-6 {
+.col-6-lg {
     width: 16.6666666667%;
 }
 
-.col-7 {
+.col-7-lg {
     width: 14.2857142857%;
 }
 
-.col-8 {
+.col-8-lg {
     width: 12.5%;
 }
 
-.col-9 {
+.col-9-lg {
     width: 11.1111111111%;
 }
 
-.col-10 {
+.col-10-lg {
     width: 10%;
 }
 
-.col-11 {
+.col-11-lg {
     width: 9.09090909091%;
 }
 
-.col-12 {
+.col-12-lg {
     width: 8.33%;
 }
 
-.col-2-3 {
+.col-2-3-lg {
     width: 66.66%;
 }
 
-.col-3-4 {
+.col-3-4-lg {
     width: 75%;
 }
 
-.col-9-10 {
+.col-9-10-lg {
     width: 90%;
 }
 
 /* Golden Ratio */
-.col-61 {
+.col-61-lg {
     width: 61.8%;
 }
 
-.col-38 {
+.col-38-lg {
     width: 38.2%;
 }
 
@@ -295,10 +295,8 @@ a img:hover {
 
 .section-heading h3 {
     font-size: 14px;
-    font-weight: bold;
-    color: #ccc;
-    letter-spacing: 2px;
-    padding-bottom: 0;
+    letter-spacing: 1px;
+    padding: 1.5em 0em 0em 0em;
 }
 
 /*------------------------------------------------------------------------------------------*/

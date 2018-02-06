@@ -1,35 +1,44 @@
 
 @media screen and (max-width: 600px) {
-  #user-sections {
-  	.user-sections .col-sm-4 {
-    	width: 100%;
-  	}
-  }
-  #sponsors {
-	.sponsors-container {
-		padding:20px 5%;
-		.sponsor {
-			padding: 20px 0px;
-			width:auto;
-			max-width:100%;
-			max-height:250px;
-		}
-	}
-  }
-  .mission {
-      p {
-          max-width: 80%;
-      }
-  }
-  #meetups .meetup-container .meetup {
-      p {
-          max-width: 80%;
-      }
-  }
+    .section-heading h2:after {
+        margin-left: 39.6%;
+    }
+    #user-section {
+      	.col-3-sm {
+            width: 100%;
+      	}
+    }
+    #sponsors {
+    	.sponsors-container {
+    		  padding: 1em;
+      		.sponsor {
+        			max-width: 100%;
+        			max-height: 250px;
+      		}
+    	}
+    }
+    .mission {
+        p {
+            max-width: 80%;
+        }
+    }
+    #meetups .meetup-container .meetup {
+        p {
+            max-width: 80%;
+        }
+    }
 }
 
 
-@media screen and (min-width: 920px) {
+@media screen and (max-width: 920px) {
+    .users {
+        img {
+            min-height: 16.5vw;
+        }
+        p {
+            max-width: 75%;
+        }
+    }
     .meetup {
         flex-basis: 50%;
         p {
@@ -38,13 +47,13 @@
     }
     .mission {
         flex-basis: 50%;
-        p {
-            width: 800px;
-        }
+    }
+    .sponsor {
+
     }
 }
 
-// 
+//
 // /* Landscape mobile & down
 // ===============================*/
 // @media (max-width: 480px) {

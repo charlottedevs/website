@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:500,700');
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
 
-$Main-font: 'Roboto', sans-serif, Helvetica;
-$Secondary-font: 'Open Sans', sans-serif, Arial;
+$Main-font: 'Roboto Slab', serif, Arial;
+$Secondary-font: 'Roboto', sans-serif, Helvetica;
 
 body {
     font-family: $Main-font;
@@ -16,6 +17,7 @@ h1 {
     letter-spacing: 1.2px;
     text-align: center;
     font-weight: 700;
+    color:#111;
 }
 
 h2 {
@@ -25,6 +27,7 @@ h2 {
     line-height: 1.3em;
     text-align: center;
     font-weight: 500;
+    color:#111;
 }
 
 h3 {
@@ -33,16 +36,17 @@ h3 {
     letter-spacing: 1.2px;
     text-align: center;
     font-weight: 500;
+    color:#111;
 }
 
 p {
-    font-size: 0.85em;
+    font-size: 0.95em;
     font-family: $Secondary-font;
-    letter-spacing: 1.2px;
+    letter-spacing: .5px;
     line-height: 1.5em;
     text-align: center;
     font-weight: 300;
-    max-width: 60%;
+    max-width: 70%;
 }
 
 /* Section Title and Subtitle */
@@ -58,7 +62,7 @@ p {
     font-family: $Secondary-font;
     font-size: 16px;
     font-weight:300;
-    color:#9c9c9c;
+    color:#111;
 }
 
 //
