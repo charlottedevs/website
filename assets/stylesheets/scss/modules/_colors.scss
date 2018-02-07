@@ -1,10 +1,14 @@
-$dark: #454E57;
+// $dark: #454E57;
+// $light: #708090;
+// $gray:  #E4E7EB;
+$dark: #111;
 $light: #708090;
 $gray:  #E4E7EB;
 $white: #fff;
+$gold: #d2b356;
 
 .section-heading h2:after {
-    background: #d2b356;
+    background: $gold;
     margin-left: 45.15%;
     content: "";
     display: block;

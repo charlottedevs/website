@@ -12,7 +12,7 @@ function logResults(json) {
     }
 
     function updateLayout(data) {
-        var meetupStr = '<div class="meetup">' + '<h2>' + data.name + '</h2>' + '<h3>' + formatDate(data) + '</h3>' + '<h3>' + data.venue.name + '</h3>' + '<h3>' + data.venue.address_1 + '</h3>' + data.description + '</div>';
+        var meetupStr = '<div class="meetup">' + '<h3>' + data.name + '</h3>' + '<h4>' + formatDate(data) + '</h4>' + '<h4>' + data.venue.name + '</h4>' + '<h4>' + data.venue.address_1 + '</h4>' + data.description + '</div>';
         document.querySelector('.meetup-container').innerHTML += meetupStr;
     }
 
