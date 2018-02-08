@@ -118,11 +118,6 @@ figure {
 /* 2. Layout Elements */
 /*------------------------------------------------------------------------------------------*/
 
-section {
-    clear: both;
-    overflow: hidden;
-}
-
 /* --------- 2.1 Rows and Columns --------- */
 
 .row {
@@ -155,10 +150,6 @@ section {
     padding: 20px;
 }
 
-#clients .col-2-3 [class*='col-'] {
-    padding: 0;
-}
-
 /* --------- 2.2 Clearfix --------- */
 
 .clearfix:after {
@@ -183,59 +174,6 @@ section {
 
 .col-4-lg {
     width: 25%;
-}
-
-.col-5-lg {
-    width: 20%;
-}
-
-.col-6-lg {
-    width: 16.6666666667%;
-}
-
-.col-7-lg {
-    width: 14.2857142857%;
-}
-
-.col-8-lg {
-    width: 12.5%;
-}
-
-.col-9-lg {
-    width: 11.1111111111%;
-}
-
-.col-10-lg {
-    width: 10%;
-}
-
-.col-11-lg {
-    width: 9.09090909091%;
-}
-
-.col-12-lg {
-    width: 8.33%;
-}
-
-.col-2-3-lg {
-    width: 66.66%;
-}
-
-.col-3-4-lg {
-    width: 75%;
-}
-
-.col-9-10-lg {
-    width: 90%;
-}
-
-/* Golden Ratio */
-.col-61-lg {
-    width: 61.8%;
-}
-
-.col-38-lg {
-    width: 38.2%;
 }
 
 /* --------- 2.4 Header --------- */
@@ -288,13 +226,34 @@ a img:hover {
 
 /* --------- 2.7 Section Headings --------- */
 
+
+section {
+    clear: both;
+    overflow: hidden;
+}
+
 .section-heading {
+    display: flex;
     padding: 0 0 15px 0;
+    align-items: center;
+    justify-content: center;
 }
 
 .section-subtitle {
     font-size: 18px;
     padding-top: 0;
+}
+
+.section-heading h2:after {
+    background: $gold;
+    margin: 0% 20%;
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 2px;
+    margin-top: 10px;
 }
 
 .section-heading h3 {

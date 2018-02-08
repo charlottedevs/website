@@ -1,6 +1,9 @@
 #sponsors {
 	p {
-		margin:auto;
+		margin: auto;
+	}
+	h3 {
+		font-size: 1.1em;
 	}
 	.sponsors-container {
 		display: flex;
@@ -8,8 +11,8 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		width:100%;
-		padding:20px 20%;
+		width: 100%;
+		padding: 20px 20%;
 		.sponsor {
 			display: flex;
 			padding: 5px 20px;
