@@ -29,3 +29,9 @@
         }
     }
 }
+
+section#meetups.hidden {
+    visibility: hidden;
+    height: 2.5em;
+    width: 0;
+}

@@ -611,6 +611,11 @@ blockquote {
       background: #111;
       color: #fff; }
 
+section#meetups.hidden {
+  visibility: hidden;
+  height: 2.5em;
+  width: 0; }
+
 #mission .mission-container {
   display: -webkit-box;
   display: -webkit-flex;
@@ -716,14 +721,14 @@ blockquote {
   #slack .slack .form-container {
     margin: 0.4em 0em 5em 0em;
     max-width: 65%;
-    padding: 4em 0em 5em 0em;
+    padding: 3.75em 0em 5em 0em;
     border-top: 2px solid rgba(17, 17, 17, 0.7);
     border-bottom: 2px solid rgba(17, 17, 17, 0.7); }
     #slack .slack .form-container form {
       border: 3px solid #111; }
       #slack .slack .form-container form input[type='email'] {
         color: #111;
-        border-right: 4px solid #111; }
+        border-right: 3px solid #111; }
       #slack .slack .form-container form input[type='submit'] {
         background: #111;
         border: 1px solid whitesmoke;
