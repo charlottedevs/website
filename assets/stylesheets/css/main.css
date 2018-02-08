@@ -681,19 +681,29 @@ section#meetups.hidden {
     width: 33%; }
 
 .users {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  padding: 0px; }
+  padding: auto; }
   .users img {
     width: 90%;
     margin: 0em auto 1.5em; }
-  .users p {
-    margin: auto;
-    max-width: 100%; }
-  .users .info {
-    display: inline-block; }
   .users hr {
     width: 20%;
     padding-top: 1px; }
+  .users p {
+    margin: auto;
+    max-width: 100%; }
 
 #slack h2 {
   padding-bottom: 0.5em; }
@@ -762,6 +772,8 @@ footer {
     max-width: 80%; } }
 
 @media screen and (max-width: 920px) {
+  #user-section .col-1-sm {
+    width: 100%; }
   .users img {
     min-height: 16.5vw; }
   .users p {
@@ -776,3 +788,39 @@ footer {
     -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%; } }
+
+@media screen and (max-width: 1049px) {
+  .users img {
+    min-height: 17vw; } }
+
+@media screen and (min-width: 1050px) {
+  .users img {
+    min-height: 17.5vw; } }
+
+@media screen and (min-width: 1200px) {
+  .users img {
+    min-height: 17.5vw; } }
+
+@media screen and (min-width: 1300px) {
+  .users img {
+    min-height: 17.25vw; } }
+
+@media screen and (min-width: 1400px) {
+  .users img {
+    min-height: 16.75vw; } }
+
+@media screen and (min-width: 1500px) {
+  .users img {
+    min-height: 16vw; } }
+
+@media screen and (min-width: 1600px) {
+  .users img {
+    min-height: 15vw; } }
+
+@media screen and (min-width: 1720px) {
+  .users img {
+    min-height: 13.75vw; } }
+
+@media screen and (min-width: 1920px) {
+  .users img {
+    min-height: 12.5vw; } }
