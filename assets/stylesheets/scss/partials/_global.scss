@@ -8,17 +8,11 @@
 - 2.3 Col Main Widths
 - 2.4 Header
 - 2.5 Images
-- 2.6 Text Alignment
-- 2.7 Section Headings
+- 2.6 Section Headings
 3. Content Elements
-- 3.1 Icons
-- 3.2 Parallax Elements
-- 3.3 Divider
-4. Page Sections
-- 4.1 Introduction
-- 4.2 Features
-- 4.3 Testimonials
-5. Footer
+- 3.1 Parallax Elements
+- 3.2 Divider
+4. Footer
 
 /*------------------------------------------------------------------------------------------*/
 /* 1. Defaults
@@ -126,22 +120,22 @@ figure {
     padding: 1.75em 0em;
     position: relative;
 }
-
-.no-padding-bottom .row, .no-padding-bottom div, .no-padding-bottom.row {
-    padding-bottom: 0;
-}
-
-.no-padding-top.row, .no-padding-top div {
-    padding-top: 0;
-}
-
-.big-padding-top {
-    padding-top: 75px !important;
-}
-
-.big-padding-bottom {
-    padding-bottom: 85px !important;
-}
+//
+// .no-padding-bottom .row, .no-padding-bottom div, .no-padding-bottom.row {
+//     padding-bottom: 0;
+// }
+//
+// .no-padding-top.row, .no-padding-top div {
+//     padding-top: 0;
+// }
+//
+// .big-padding-top {
+//     padding-top: 75px !important;
+// }
+//
+// .big-padding-bottom {
+//     padding-bottom: 85px !important;
+// }
 
 /* Targets all elements */
 
@@ -210,21 +204,7 @@ a img:hover {
     opacity: 0.7;
 }
 
-/* --------- 2.6 Text Alignment ---------- */
-
-.text-left {
-    text-align: left;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-right {
-    text-align: right;
-}
-
-/* --------- 2.7 Section Headings --------- */
+/* --------- 2.6 Section Headings --------- */
 
 
 section {
@@ -265,69 +245,69 @@ section {
 /*------------------------------------------------------------------------------------------*/
 /* 3. Content Elements */
 /*------------------------------------------------------------------------------------------*/
-
-/* --------- 3.1 Icons ---------- */
-
-/*Font Icon sizes*/
-
-.fa-1x {
-    font-size: 15px !important;
-}
-
-/*Icon Block*/
-
-.icon-block {
-    position: relative;
-}
-
-.icon-block h4 {
-    font-weight: bold;
-    padding-top: 0;
-}
-
-.icon-block .icon {
-    position: absolute;
-}
-
-.icon-block p {
-    margin-top: 0;
-}
-
-/* Icon Left*/
-
-.icon-left .icon {
-    left: 15;
-}
-
-.icon-left .icon-block-description {
-    padding-left: 53px;
-}
-
-/* Icon Right */
-
-.icon-right .icon {
-    right: 15;
-}
-
-.icon-right .icon-block-description {
-    padding-right: 53px;
-}
-
-/* Icon Above */
-
-.icon-top {
-    display: block;
-}
-
-.icon-top .icon {
-    position: relative;
-    display: block;
-}
-
-.icon-top .icon-block-description {
-    padding-top: 25px;
-}
-
+//
+// /* --------- 3.1 Icons ---------- */
+//
+// /*Font Icon sizes*/
+//
+// .fa-1x {
+//     font-size: 15px !important;
+// }
+//
+// /*Icon Block*/
+//
+// .icon-block {
+//     position: relative;
+// }
+//
+// .icon-block h4 {
+//     font-weight: bold;
+//     padding-top: 0;
+// }
+//
+// .icon-block .icon {
+//     position: absolute;
+// }
+//
+// .icon-block p {
+//     margin-top: 0;
+// }
+//
+// /* Icon Left*/
+//
+// .icon-left .icon {
+//     left: 15;
+// }
+//
+// .icon-left .icon-block-description {
+//     padding-left: 53px;
+// }
+//
+// /* Icon Right */
+//
+// .icon-right .icon {
+//     right: 15;
+// }
+//
+// .icon-right .icon-block-description {
+//     padding-right: 53px;
+// }
+//
+// /* Icon Above */
+//
+// .icon-top {
+//     display: block;
+// }
+//
+// .icon-top .icon {
+//     position: relative;
+//     display: block;
+// }
+//
+// .icon-top .icon-block-description {
+//     padding-top: 25px;
+// }
+//
 /* --------- 3.2 Parallax Elements ---------- */
 
 .banner-parallax-1, .banner-parallax-2, .banner-parallax-3 {
@@ -365,125 +345,7 @@ section {
 }
 
 /*------------------------------------------------------------------------------------------*/
-/* 4. Page Sections */
-/*------------------------------------------------------------------------------------------*/
-
-/* --------- 4.1 Introduction ---------- */
-
-.introduction img.featured {
-    padding: 55px 0 0 0;
-}
-
-/* --------- 4.2 Features ---------- */
-
-.features.row {
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-.features div:nth-child(4) {
-    clear: both;
-}
-
-/* --------- 4.3 Testimonials ---------- */
-
-.testimonial {
-    padding: 15px;
-}
-
-blockquote {
-    position: relative;
-}
-
-.testimonial img {
-    max-height: 120px;
-    border-radius: 250em;
-}
-
-.testimonial footer {
-    padding-top: 12px;
-}
-
-/* Style Classic - Avatar above Testimonial */
-
-.testimonial.classic img {
-    display: inline-block;
-    margin-bottom: 25px;
-}
-
-.testimonial.classic q {
-    display: block;
-}
-
-.testimonial.classic footer:before {
-    display: block;
-    content: "";
-    width: 30px;
-    height: 4px;
-    margin: 10px auto 15px auto;
-}
-
-/* Style Big */
-
-.testimonial.bigtest {
-    padding-top: 0;
-}
-
-.testimonial.bigtest q {
-    font-size: 22px;
-}
-
-/* --------- 4.4 Gallery ---------- */
-
-#gallery img {
-    max-height: 300px;
-}
-
-#gallery [class*='col-'] {
-    padding: 0;
-}
-
-#gallery a {
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-}
-
-#gallery a:hover img {
-    opacity: 0.15;
-    -moz-backface-visibility: hidden;
-}
-
-#gallery a:before {
-    font-size: 2.2em;
-    font-style: normal;
-    font-weight: normal;
-    text-align: center;
-    content: "+";
-    width: 70px;
-    height: 70px;
-    border-radius: 100em;
-    display: block;
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    line-height: 72px;
-    margin: -35px 0 0 -35px;
-    opacity: 0;
-    -webkit-transition: all .2s linear;
-    -moz-transition: all .2s linear;
-    transition: all .2s linear;
-    vertical-align: middle;
-}
-
-#gallery a:hover:before {
-    opacity: 1;
-    top: 50%;
-    left: 50%;
-}
-
-/*------------------------------------------------------------------------------------------*/
-/* 5. Footer */
+/* 4. Footer */
 /*------------------------------------------------------------------------------------------*/
 
 #landing-footer {
