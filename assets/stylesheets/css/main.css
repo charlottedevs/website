@@ -205,6 +205,9 @@ figure {
 .col-2-3-lg {
   width: 66.66%; }
 
+.col-1-md {
+  width: 100%; }
+
 .col-1-sm {
   width: 100%; }
 
@@ -634,7 +637,7 @@ footer {
   footer .content-links a {
     margin: 0em 0.2em; } }
 
-@media screen and (max-width: 720px) {
+@media screen and (min-width: 601px) {
   footer [class*='col-'] {
     float: none;
     display: -webkit-inline-box;
@@ -649,6 +652,62 @@ footer {
     padding: 4px 0px;
     width: auto; }
   footer .copyright {
-    margin-top: 2px; }
+    margin-top: 0.5em; }
   footer .content-links a {
-    margin: 0em 0.2em; } }
+    margin: 0.5em; } }
+
+@media screen and (min-width: 781px) {
+  footer [class*='col-'] {
+    float: none;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-content: space-between;
+        -ms-flex-line-pack: justify;
+            align-content: space-between;
+    padding: 7.5px 0px; }
+  footer .col-1-sm, footer .col-4-lg {
+    padding: 4px 0px;
+    width: auto; }
+  footer .copyright {
+    margin-top: 0.5em; }
+  footer .content-links a {
+    margin: 0.75em; } }
+
+@media screen and (min-width: 880px) {
+  footer [class*='col-'] {
+    float: none;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-content: space-between;
+        -ms-flex-line-pack: justify;
+            align-content: space-between;
+    padding: 7.5px 0px; }
+  footer .col-1-sm, footer .col-1-md {
+    padding: 0.1em 4.25em;
+    width: auto; }
+  footer .col-4-lg {
+    width: auto; }
+  footer .copyright {
+    margin-top: 0.5em; }
+  footer .content-links a {
+    margin: 0.75em; } }
+
+@media screen and (max-width: 920px) {
+  .users img {
+    min-height: 16.5vw; }
+  .users p {
+    max-width: 75%; }
+  .meetup {
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%; }
+    .meetup p {
+      width: 800px; }
+  .mission {
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%; } }
