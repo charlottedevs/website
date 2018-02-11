@@ -137,13 +137,6 @@ figure {
 //     padding-bottom: 85px !important;
 // }
 
-/* Targets all elements */
-
-[class*='col-'] {
-    float: left;
-    padding: 20px;
-}
-
 /* --------- 2.2 Clearfix --------- */
 
 .clearfix:after {
@@ -153,6 +146,13 @@ figure {
 }
 
 /* --------- 2.3 Col Main Widths --------- */
+
+/* Targets all column classes */
+
+[class*='col-'] {
+    float: left;
+    padding: 20px;
+}
 
 .col-1-lg {
     width: 100%;
@@ -169,6 +169,19 @@ figure {
 .col-4-lg {
     width: 25%;
 }
+
+.col-1-3-lg {
+    width: 16.67%
+}
+
+.col-2-3-lg {
+    width: 66.66%
+}
+
+.col-1-sm {
+    width: 100%;
+}
+
 
 /* --------- 2.4 Header --------- */
 
@@ -316,33 +329,33 @@ section {
 
 /* --------- 3.3 Divider ---------- */
 
-.divider {
-    position: relative;
-    width: 40%;
-    height: 20px;
-    line-height: 20px;
-    margin: 10px auto 5px auto;
-    clear: both;
-    text-align: center;
-}
-
-.divider-inner {
-    position: absolute;
-    height: 1px;
-    width: 100%;
-    top: 50%;
-    margin-top: -1px;
-    border-top: 1px solid;
-    border-color: #e1e1e1;
-}
-
-.divider i {
-    background: #fff;
-    position: relative;
-    top: -11px;
-    padding: 0 5px 0 5px;
-    color: #e1e1e1;
-}
+// .divider {
+//     position: relative;
+//     width: 40%;
+//     height: 20px;
+//     line-height: 20px;
+//     margin: 10px auto 5px auto;
+//     clear: both;
+//     text-align: center;
+// }
+//
+// .divider-inner {
+//     position: absolute;
+//     height: 1px;
+//     width: 100%;
+//     top: 50%;
+//     margin-top: -1px;
+//     border-top: 1px solid;
+//     border-color: #e1e1e1;
+// }
+//
+// .divider i {
+//     background: #fff;
+//     position: relative;
+//     top: -11px;
+//     padding: 0 5px 0 5px;
+//     color: #e1e1e1;
+// }
 
 /*------------------------------------------------------------------------------------------*/
 /* 4. Footer */

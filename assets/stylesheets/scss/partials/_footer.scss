@@ -9,12 +9,28 @@ footer {
     justify-content: center;
     align-items: center;
     // border-top: 8px solid rgba($dark-gray, 1);
+    [class*='col-'] {
+        padding: 20px 0px;
+    }
     .content-links {
         text-align: center;
-        padding: 10px 0px 2.5px 0px;
+        padding: .5em 2em .2em 2em;
+        // margin: 0 7em;
         a {
             color: $light;
             text-decoration: none;
+            padding: .65em 1.4em;
+            border: 1px solid #d2b356;
         }
+        a::before {
+            border-left: solid 1px $dark-gray;
+            padding: 2.5em;
+        }
+    }
+    .divider {
+        border-left: solid 1px $dark-gray;
+    }
+    .copyright {
+        margin-bottom: 0px;
     }
 }

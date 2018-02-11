@@ -175,11 +175,6 @@ figure {
   padding: 1.75em 0em;
   position: relative; }
 
-/* Targets all elements */
-[class*='col-'] {
-  float: left;
-  padding: 20px; }
-
 /* --------- 2.2 Clearfix --------- */
 .clearfix:after {
   content: "";
@@ -187,6 +182,11 @@ figure {
   clear: both; }
 
 /* --------- 2.3 Col Main Widths --------- */
+/* Targets all column classes */
+[class*='col-'] {
+  float: left;
+  padding: 20px; }
+
 .col-1-lg {
   width: 100%; }
 
@@ -198,6 +198,15 @@ figure {
 
 .col-4-lg {
   width: 25%; }
+
+.col-1-3-lg {
+  width: 16.67%; }
+
+.col-2-3-lg {
+  width: 66.66%; }
+
+.col-1-sm {
+  width: 100%; }
 
 /* --------- 2.4 Header --------- */
 #header {
@@ -282,31 +291,6 @@ section {
   min-height: 350px; }
 
 /* --------- 3.3 Divider ---------- */
-.divider {
-  position: relative;
-  width: 40%;
-  height: 20px;
-  line-height: 20px;
-  margin: 10px auto 5px auto;
-  clear: both;
-  text-align: center; }
-
-.divider-inner {
-  position: absolute;
-  height: 1px;
-  width: 100%;
-  top: 50%;
-  margin-top: -1px;
-  border-top: 1px solid;
-  border-color: #e1e1e1; }
-
-.divider i {
-  background: #fff;
-  position: relative;
-  top: -11px;
-  padding: 0 5px 0 5px;
-  color: #e1e1e1; }
-
 /*------------------------------------------------------------------------------------------*/
 /* 4. Footer */
 /*------------------------------------------------------------------------------------------*/
@@ -602,12 +586,23 @@ footer {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+  footer [class*='col-'] {
+    padding: 20px 0px; }
   footer .content-links {
     text-align: center;
-    padding: 10px 0px 2.5px 0px; }
+    padding: .5em 2em .2em 2em; }
     footer .content-links a {
       color: whitesmoke;
-      text-decoration: none; }
+      text-decoration: none;
+      padding: .65em 1.4em;
+      border: 1px solid #d2b356; }
+    footer .content-links a::before {
+      border-left: solid 1px #454E57;
+      padding: 2.5em; }
+  footer .divider {
+    border-left: solid 1px #454E57; }
+  footer .copyright {
+    margin-bottom: 0px; }
 
 @media screen and (max-width: 600px) {
   #user-section .col-1-sm {
@@ -620,58 +615,40 @@ footer {
   .mission p {
     max-width: 80%; }
   #meetups .meetup-container .meetup p {
-    max-width: 80%; } }
+    max-width: 80%; }
+  footer [class*='col-'] {
+    float: none;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-content: space-between;
+        -ms-flex-line-pack: justify;
+            align-content: space-between;
+    padding: 7.5px 0px; }
+  footer .col-1-lg, footer .col-1-3-lg, footer .col-2-3-lg, footer .col-4-lg {
+    padding: 4px 0px;
+    width: auto; }
+  footer .copyright {
+    margin-top: 2px; }
+  footer .content-links a {
+    margin: 0em 0.2em; } }
 
-@media screen and (max-width: 920px) {
-  #user-section .col-1-sm {
-    width: 100%; }
-  .users img {
-    min-height: 16.5vw; }
-  .users p {
-    max-width: 75%; }
-  .meetup {
-    -webkit-flex-basis: 50%;
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%; }
-    .meetup p {
-      width: 800px; }
-  .mission {
-    -webkit-flex-basis: 50%;
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%; } }
-
-@media screen and (max-width: 1049px) {
-  .users img {
-    min-height: 17vw; } }
-
-@media screen and (min-width: 1050px) {
-  .users img {
-    min-height: 17.5vw; } }
-
-@media screen and (min-width: 1200px) {
-  .users img {
-    min-height: 17.5vw; } }
-
-@media screen and (min-width: 1300px) {
-  .users img {
-    min-height: 17vw; } }
-
-@media screen and (min-width: 1400px) {
-  .users img {
-    min-height: 16vw; } }
-
-@media screen and (min-width: 1500px) {
-  .users img {
-    min-height: 14.75vw; } }
-
-@media screen and (min-width: 1600px) {
-  .users img {
-    min-height: 14.25vw; } }
-
-@media screen and (min-width: 1720px) {
-  .users img {
-    min-height: 13.5vw; } }
-
-@media screen and (min-width: 1900px) {
-  .users img {
-    min-height: 11.75vw; } }
+@media screen and (max-width: 720px) {
+  footer [class*='col-'] {
+    float: none;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-content: space-between;
+        -ms-flex-line-pack: justify;
+            align-content: space-between;
+    padding: 7.5px 0px; }
+  footer .col-1-lg, footer .col-1-3-lg, footer .col-2-3-lg, footer .col-4-lg {
+    padding: 4px 0px;
+    width: auto; }
+  footer .copyright {
+    margin-top: 2px; }
+  footer .content-links a {
+    margin: 0em 0.2em; } }
