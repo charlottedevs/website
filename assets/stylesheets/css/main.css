@@ -85,7 +85,6 @@ form {
 - 2.3 Header
 - 2.4 Images
 - 2.5 Section Headings
-- 2.6 Parallax Elements
 3. Footer
 
 /*------------------------------------------------------------------------------------------*/
@@ -112,10 +111,6 @@ a {
   -webkit-transition: opacity 0.3s ease-out;
   -o-transition: opacity 0.3s ease-out;
   transition: opacity 0.3s ease-out; }
-
-.parallax-window {
-  min-height: 400px;
-  background: transparent; }
 
 figure {
   margin: 0; }
@@ -273,10 +268,6 @@ section {
   letter-spacing: 1px;
   padding: 1.5em 0em 0em 0em; }
 
-/* --------- 2.6 Parallax Elements ---------- */
-.banner-parallax-1, .banner-parallax-2, .banner-parallax-3 {
-  min-height: 350px; }
-
 /*------------------------------------------------------------------------------------------*/
 /* 3. Footer */
 /*------------------------------------------------------------------------------------------*/
@@ -314,7 +305,7 @@ section {
   opacity: 1; }
 
 #landing {
-  background: url("../../images/landing.jpeg") center center no-repeat;
+  background: url("../images/landing.jpeg") center center no-repeat;
   background: url("http://res.cloudinary.com/charlotte-developers/image/upload/dpr_auto,f_auto,q_auto/v1511204771/landing.jpg") center center no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
@@ -669,7 +660,7 @@ footer {
   .users img {
     min-height: 13.5vw; }
   footer .col-1-md {
-    padding: 0.5em 40em; } }
+    padding: 0.1em 40em; } }
 
 @media screen and (min-width: 1900px) {
   .users img {

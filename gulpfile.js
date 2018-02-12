@@ -43,7 +43,7 @@ gulp.task('scripts', function () {
         .pipe(gulp.dest("./assets/javascripts"))
         .pipe(when(argv.prod, concat('index.js')))
         .pipe(when(argv.prod, gulp.dest('dist/assets/javascripts')))
-        .pipe(browserSync.stream());
+        // .pipe(browserSync.stream());
 });
 
 // Static Server + watching scss/html files
@@ -77,7 +77,8 @@ gulp.task('watch', function () {
 // });
 
 // Build tasks
-gulp.task('html', ['styles', 'scripts'], () => {
+gulp.task('html', () => {
+  runSequence('styles', 'scripts');
   return gulp.src('./*.html')
     .pipe(useref())
     .pipe(when(/\.js$/, uglify({compress: {drop_console: true}})))
@@ -117,6 +118,7 @@ gulp.task('deploy', function () {
     runSequence('build', 'ghpages');
 });
 /* Manual deploy
+npm run-script build
 git add dist && git commit -m "Initial dist subtree commit"
 git subtree push --prefix dist origin gh-pages
 */

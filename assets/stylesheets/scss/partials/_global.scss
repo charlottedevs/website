@@ -8,7 +8,6 @@
 - 2.3 Header
 - 2.4 Images
 - 2.5 Section Headings
-- 2.6 Parallax Elements
 3. Footer
 
 /*------------------------------------------------------------------------------------------*/
@@ -42,11 +41,6 @@ a {
     -moz-transition: opacity 0.3s ease-out;
     -o-transition: opacity 0.3s ease-out;
     transition: opacity 0.3s ease-out;
-}
-
-.parallax-window {
-    min-height: 400px;
-    background: transparent;
 }
 
 figure {
@@ -222,12 +216,6 @@ section {
     font-size: 14px;
     letter-spacing: 1px;
     padding: 1.5em 0em 0em 0em;
-}
-
-/* --------- 2.6 Parallax Elements ---------- */
-
-.banner-parallax-1, .banner-parallax-2, .banner-parallax-3 {
-    min-height: 350px;
 }
 
 /*------------------------------------------------------------------------------------------*/

@@ -21,15 +21,19 @@ After discussion, we came to the conclusion that *this is a Charlotte Junior Dev
      - [ ] Meetup link buttons (Carlos)
      - [ ] Social links (Carlos)
 3. - [x] User sections - Short text descriptions (see note below) about the types of people who would get value from the group
-      1. Working Devs
-      2. Job-seeking Devs
-      3. Learning-path Devs
-      4. Mentors
-4. - [ ] Mission statement and purpose
-5. - [ ] Sponsor attribution
-6. - [ ] Links to current / future content
-     - [ ] Github Dev Survival Guide
-     - [ ] Code Cred
+      1. [x] Working Devs
+      2. [x] Job-seeking Devs
+      3. [x] Learning-path Devs
+      4. [x] Mentors
+4. - [x] Mission statement and purpose
+5. - [x] Sponsor attribution
+6. - [x] Links to current / future content
+     - [x] Dev Survival Guide
+     - [x] Code Cred
+     - [x] Forum
+     - [x] Github
+     - [ ] Project Management App (Pending..)
+     - [ ] Management Structure (Spreadsheet)
 7. - Issues
      - [x] Different environment image path
 
@@ -45,7 +49,6 @@ At least initially, dynamic apps and content will be “linked” off from the m
 * Blogs
 
 **Other**
-* Forum (DO & Discourse) - perma-storage content suggestion
 * Feedback / Suggestion submission form
 * Pair Programming link-ups
 
@@ -58,6 +61,9 @@ At least initially, dynamic apps and content will be “linked” off from the m
 3. Install dependencies by being in the root folder and typing
 
    `npm i` or `yarn`
+
+   \*Side Note\* - The app will probably work without this, but recommended gulp install:
+   `npm i -g gulp`
 
 4. Upon completion of dependencies installation run type the following into the terminal to start local server
 
