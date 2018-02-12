@@ -118,6 +118,7 @@ gulp.task('deploy', function () {
     runSequence('build', 'ghpages');
 });
 /* Manual deploy
+disable default gulp task
 npm run-script build
 git add dist && git commit -m "Initial dist subtree commit"
 git subtree push --prefix dist origin gh-pages
