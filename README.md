@@ -2,8 +2,6 @@
 
 https://cltdevs.github.io/website/
 
-After discussion, we came to the conclusion that *this is a Charlotte Junior Devs focused website*
-
 ### Purpose
   * Showcase who the group is and what we are about
   * Point the way to slack
@@ -72,4 +70,4 @@ At least initially, dynamic apps and content will be “linked” off from the m
 5. Send a pull request once you want to contribute
 
 ### Design Resource
-[Figma Design and stylesheet](https://www.figma.com/file/QvR9WHgbL1RSCRY8ceLepBuE/Charlotte-Junior-Developer)
+[Figma Design and Stylesheet](https://www.figma.com/file/QvR9WHgbL1RSCRY8ceLepBuE/Charlotte-Junior-Developer)
