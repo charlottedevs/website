@@ -8,17 +8,23 @@ footer {
     background: $dark;
     justify-content: center;
     align-items: center;
-    // border-top: 8px solid rgba($dark-gray, 1);
     [class*='col-'] {
-        padding: 20px 0px;
+        float: none;
+        display: inline-flex;
+        align-content: space-between;
+        padding: 7.5px 0px;
+    }
+    .col-1-lg, .col-4-lg {
+        padding: 4px 0px;
+        width: auto;
     }
     .content-links {
         text-align: center;
         padding: .5em 2em .2em 2em;
-        // margin: 0 7em;
         a {
             color: $light;
             text-decoration: none;
+            margin: 0.75em;
             padding: .65em 1.4em;
             border: 1px solid #d2b356;
         }
@@ -31,6 +37,7 @@ footer {
         border-left: solid 1px $dark-gray;
     }
     .copyright {
-        margin-bottom: 0px;
+        margin-top: 0.5em;
+        margin-bottom: 0em;
     }
 }
