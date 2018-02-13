@@ -1,196 +1,192 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="Charlotte Devs" />
-  <meta property="og:description" content="A group for developers in the Charlotte, NC area." />
-  <meta property="og:image" content="" />
-  <!--TODO-->
-  <meta property="og:image:width" content="" />
-  <!--TODO-->
-  <meta property="og:image:height" content="" />
-  <!--TODO-->
-  <meta property="og:image:alt" content="Charlotte Developers" />
-  <meta property="og:url" content="" />
-  <!--TODO-->
-  <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:title" content="Charlotte Devs" />
+    <meta property="og:description" content="A group for developers in the Charlotte, NC area." />
+    <meta property="og:image" content="" />
+    <!--TODO-->
+    <meta property="og:image:width" content="" />
+    <!--TODO-->
+    <meta property="og:image:height" content="" />
+    <!--TODO-->
+    <meta property="og:image:alt" content="Charlotte Developers" />
+    <meta property="og:url" content="" />
+    <!--TODO-->
+    <meta name="twitter:card" content="summary_large_image" />
 
-  <title>Charlotte Devs</title>
-  <!-- CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/5.0.0/sanitize.min.css" />
-  <!-- gulp-useref block -->
-  <!-- build:css assets/stylesheets/main.css -->
-  <link href="./assets/stylesheets/css/main.css" rel="stylesheet">
-  <!-- endbuild -->
+    <title>Charlotte Devs</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/5.0.0/sanitize.min.css" />
+    <!-- gulp-useref block -->
+    <!-- build:css assets/stylesheets/main.css -->
+    <link href="./assets/stylesheets/css/main.css" rel="stylesheet">
+    <!-- endbuild -->
 
-  <link rel="shortcut icon" href="assets/images/favicon.png">
-  <!--
-    WARNING: Respond.js doesn't work if you view the page via file://
-    HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
-  -->
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <!--
+      WARNING: Respond.js doesn't work if you view the page via file://
+      HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  </head>
 
-<body>
+  <body>
 
-  <div class="page-border" >
-    <div class="top-border" style="visibility: visible;"></div>
-    <div class="right-border" style="visibility: visible;"></div>
-    <div class="bottom-border" style="visibility: visible;"></div>
-    <div class="left-border" style="visibility: visible;"></div>
-  </div>
+    <div class="page-border" >
+      <div class="top-border" style="visibility: visible;"></div>
+      <div class="right-border" style="visibility: visible;"></div>
+      <div class="bottom-border" style="visibility: visible;"></div>
+      <div class="left-border" style="visibility: visible;"></div>
+    </div>
 
-  <div id="wrapper">
+    <div id="wrapper">
 
-    <!-- <nav id="nav">
-      <div class="logo">
-        <h1>CLTJD</h1>
-      </div>
-      <div class="nav-links">
-        <ul>
-          <li class="nav-link">Home</li>
-          <li class="nav-link">Meetups</li>
-          <li class="nav-link">Users</li>
-        </ul>
-      </div>
-    </nav> -->
-
-    <header id="landing" class="scrollto clearfix" data-enllax-ratio=".5">
-      <div class="landing-container">
-        <h1>Welcome to Charlotte Developers</h1>
-        <h2>A community that revolves around you</h2>
-      </div>
-    </header>
-
-    <main>
-      <!-- Meetups API -->
-      <section id="meetups" class="meetups scrollto hidden">
-        <div class="section-heading">
-            <h2 class="section-title">Upcoming Meetups</h1>
+      <!-- <nav id="nav">
+        <div class="logo">
+          <h1>CLTJD</h1>
         </div>
-        <div class="meetup-container"></div>
-      </section>
+        <div class="nav-links">
+          <ul>
+            <li class="nav-link">Home</li>
+            <li class="nav-link">Meetups</li>
+            <li class="nav-link">Users</li>
+          </ul>
+        </div>
+      </nav> -->
 
-      <!-- Users -->
-      <section id="user-section" class="users scrollto">
-        <div class="row clearfix">
-          <div class="section-heading">
-            <h2 class="section-title">Who We Are</h2>
-          </div>
-          <div class="col-1-sm col-3-lg info">
-            <img src="http://res.cloudinary.com/charlotte-developers/image/upload/dpr_auto,f_auto,q_auto/v1511204771/people-listening.jpg" class="user-img" alt="speaker audience" />
-            <h3>Emerging Developers</h3>
-            <hr />
-            <p class="check">There are many roads that lead to becoming a developer. The Charlotte Developers community includes people who are approaching development from a wide range of backgrounds including 4-year degrees, coding bootcamps, and self-teaching. In
-              this group you will have a place to ask questions and find guidance on everything from coding to interview prep. </p>
-          </div>
-          <div class="col-1-sm col-3-lg info">
-            <img src="http://res.cloudinary.com/charlotte-developers/image/upload/dpr_auto,f_auto,q_auto,c_scale/v1511204746/coding.jpg" class="user-img" alt="actively coding" />
-            <h3>Junior Developers</h3>
-            <hr />
-            <p>
-              In your first few years working as a developer it is vital to keep networking, learning, and growing. This community is a great place to stay connected with the Charlotte area tech community.
-            </p>
-          </div>
-          <div class="col-1-sm col-3-lg info">
-            <img src="http://res.cloudinary.com/charlotte-developers/image/upload/dpr_auto,f_auto,q_auto/v1511204772/leading_codathon.jpg" class="user-img" alt="codathon" />
-            <h3>Senior Developers & Mentors</h3>
-            <hr />
-            <p>
-              If you're an experienced developer, this group is a great place for you to give back to the Charlotte area tech community. Remember, teaching is one of the best ways to keep learning!
-            </p>
-          </div>
-        </div> <!-- end row -->
-      </section>
+      <header id="landing" class="scrollto clearfix" data-enllax-ratio=".5">
+        <div class="landing-container">
+          <h1>Welcome to Charlotte Developers</h1>
+          <h2>A community that revolves around you</h2>
+        </div>
+      </header>
 
-      <!--Mission statement/purpose-->
-      <section id="mission" class="mission scrollto">
-        <div class="row clearfix">
+      <main>
+        <!-- Meetups API -->
+        <section id="meetups" class="meetups scrollto hidden">
           <div class="section-heading">
-            <h2 class="section-title">What We're About</h2>
+              <h2 class="section-title">Upcoming Meetups</h1>
           </div>
-          <div class="mission-container">
-            <div class="mission">
-              <p>Our mission is to grow Charlotte's tech community by bringing together developers of all skill levels and interests.</p>
+          <div class="meetup-container"></div>
+        </section>
+
+        <!-- Users -->
+        <section id="user-section" class="users scrollto">
+          <div class="row clearfix">
+            <div class="section-heading">
+              <h2 class="section-title">Who We Are</h2>
+            </div>
+            <div class="col-1-sm col-3-lg info">
+              <img src="http://res.cloudinary.com/charlotte-developers/image/upload/dpr_auto,f_auto,q_auto/v1511204771/people-listening.jpg" class="user-img" alt="speaker audience" />
+              <h3>Emerging Developers</h3>
+              <hr />
+              <p class="check">There are many roads that lead to becoming a developer. The Charlotte Developers community includes people who are approaching development from a wide range of backgrounds including 4-year degrees, coding bootcamps, and self-teaching. In
+                this group you will have a place to ask questions and find guidance on everything from coding to interview prep. </p>
+            </div>
+            <div class="col-1-sm col-3-lg info">
+              <img src="http://res.cloudinary.com/charlotte-developers/image/upload/dpr_auto,f_auto,q_auto,c_scale/v1511204746/coding.jpg" class="user-img" alt="actively coding" />
+              <h3>Junior Developers</h3>
+              <hr />
               <p>
-                While other meetup groups in Charlotte are focused on discussing and improving particular skillsets, we want to bring the whole community together through interactions. The more we faciliatate interaction between developers of all skill levels, the greater the community we can build.
-              </p>
-              <p>
-                We have a soft spot in our hearts for <strong>junior developers</strong> for two reasons. First, we're all junior developers in one area or another. While you may be proficient in Ruby, if you are a noob in React, here you'll be right at home with others who are proud to be still learning. Second, having a group dedicated to junior developers is a way of welcoming the next generation of developers into the fold of existing ones.
+                In your first few years working as a developer it is vital to keep networking, learning, and growing. This community is a great place to stay connected with the Charlotte area tech community.
               </p>
             </div>
-          </div>
-        </div> <!-- end row -->
-      </section>
+            <div class="col-1-sm col-3-lg info">
+              <img src="http://res.cloudinary.com/charlotte-developers/image/upload/dpr_auto,f_auto,q_auto/v1511204772/leading_codathon.jpg" class="user-img" alt="codathon" />
+              <h3>Senior Developers & Mentors</h3>
+              <hr />
+              <p>
+                If you're an experienced developer, this group is a great place for you to give back to the Charlotte area tech community. Remember, teaching is one of the best ways to keep learning!
+              </p>
+            </div>
+          </div> <!-- end row -->
+        </section>
 
-      <!-- Sponsors -->
-      <section id="sponsors" class="sponsors scrollto">
-        <div class="row clearfix">
-          <div class="section-heading">
-            <h2 class="section-title">Sponsors</h2>
-          </div>
-          <h3 class="section-subtitle">Charlotte Devs extends a big thank-you to all its sponsors!</h3>
-          <div class="sponsors-container">
-            <img class="sponsor" src="./assets/images/sponsors/accruepartners.png" alt="Accue Partners logo">
-            <img class="sponsor" src="./assets/images/sponsors/girl-development-it.jpg" alt="Girl Develop It logo">
-            <img class="sponsor" src="./assets/images/sponsors/levvel.png" alt="Levvel logo">
-            <img class="sponsor" src="./assets/images/sponsors/red-ventures.png" alt="Red Ventures logo">
-            <img class="sponsor" src="./assets/images/sponsors/signature-consultants.gif" alt="Signature Consultants logo">
-            <img class="sponsor" src="./assets/images/sponsors/skookum.png" alt="Skookum logo">
-            <img class="sponsor" src="./assets/images/sponsors/tech-incubator.jpg" alt="Tech Incubator logo">
-            <img class="sponsor" src="./assets/images/sponsors/tek-systems.jpg" alt="TEK Systems logo">
-            <img class="sponsor" src="./assets/images/sponsors/wray-ward.jpg" alt="Wray Ward logo">
-          </div>
-        </div> <!-- end row -->
-      </section>
+        <!--Mission statement/purpose-->
+        <section id="mission" class="mission scrollto">
+          <div class="row clearfix">
+            <div class="section-heading">
+              <h2 class="section-title">What We're About</h2>
+            </div>
+            <div class="mission-container">
+              <div class="mission">
+                <p>Our mission is to grow Charlotte's tech community by bringing together developers of all skill levels and interests.</p>
+                <p>
+                  While other meetup groups in Charlotte are focused on discussing and improving particular skillsets, we want to bring the whole community together through interactions. The more we faciliatate interaction between developers of all skill levels, the greater the community we can build.
+                </p>
+                <p>
+                  We have a soft spot in our hearts for <strong>junior developers</strong> for two reasons. First, we're all junior developers in one area or another. While you may be proficient in Ruby, if you are a noob in React, here you'll be right at home with others who are proud to be still learning. Second, having a group dedicated to junior developers is a way of welcoming the next generation of developers into the fold of existing ones.
+                </p>
+              </div>
+            </div>
+          </div> <!-- end row -->
+        </section>
 
-      <!-- Slack -->
-      <section id="slack" class="slack scrollto">
-        <div class="row clearfix">
-          <div class="slack">
-            <div class="form-container">
-              <h2>Join us on Slack</h2>
-              <form action="http://www.cltdevs.com/invite">
-                <input type="email" name="email" id="slack-email" placeholder="Enter your email">
-                <input type="submit" value="Join">
-              </form>
+        <!-- Sponsors -->
+        <section id="sponsors" class="sponsors scrollto">
+          <div class="row clearfix">
+            <div class="section-heading">
+              <h2 class="section-title">Sponsors</h2>
+            </div>
+            <h3 class="section-subtitle">Charlotte Devs extends a big thank-you to all its sponsors!</h3>
+            <div class="sponsors-container">
+              <img class="sponsor" src="./assets/images/sponsors/accruepartners.png" alt="Accue Partners logo">
+              <img class="sponsor" src="./assets/images/sponsors/girl-development-it.jpg" alt="Girl Develop It logo">
+              <img class="sponsor" src="./assets/images/sponsors/levvel.png" alt="Levvel logo">
+              <img class="sponsor" src="./assets/images/sponsors/red-ventures.png" alt="Red Ventures logo">
+              <img class="sponsor" src="./assets/images/sponsors/signature-consultants.gif" alt="Signature Consultants logo">
+              <img class="sponsor" src="./assets/images/sponsors/skookum.png" alt="Skookum logo">
+              <img class="sponsor" src="./assets/images/sponsors/tech-incubator.jpg" alt="Tech Incubator logo">
+              <img class="sponsor" src="./assets/images/sponsors/tek-systems.jpg" alt="TEK Systems logo">
+              <img class="sponsor" src="./assets/images/sponsors/wray-ward.jpg" alt="Wray Ward logo">
+            </div>
+          </div> <!-- end row -->
+        </section>
+
+        <!-- Slack -->
+        <section id="slack" class="slack scrollto">
+          <div class="row clearfix">
+            <div class="slack">
+              <div class="form-container">
+                <h2>Join us on Slack</h2>
+                <form action="http://www.cltdevs.com/invite">
+                  <input type="email" name="email" id="slack-email" placeholder="Enter your email">
+                  <input type="submit" value="Join">
+                </form>
+              </div>
             </div>
           </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="col-1-sm col-1-md col-1-lg content-links">
+          <div class="col-4-lg"><a href="#">Github</a></div>
+          <div class="col-4-lg"><a href="#">Forum</a></div>
+          <div class="col-4-lg"><a href="#">Dev Survival Kit</a></div>
+          <div class="col-4-lg"><a href="#">Code Cred</a></div>
         </div>
-      </section>
-    </main>
+        <p class="copyright">Charlotte Developer Community &copy 2017</p>
+      </footer>
+    </div> <!-- End Wrapper -->
 
-    <footer>
-      <div class="col-1-sm col-1-md col-1-lg content-links">
-        <div class="col-4-lg"><a href="#">Github</a></div>
-        <div class="col-4-lg"><a href="#">Forum</a></div>
-        <div class="col-4-lg"><a href="#">Dev Survival Kit</a></div>
-        <div class="col-4-lg"><a href="#">Code Cred</a></div>
-      </div>
-      <p class="copyright">Charlotte Developer Community &copy 2017</p>
-    </footer>
-  </div> <!-- End Wrapper -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script> <!-- jquery cdn -->
+    <script src="./assets/javascripts/jquery.enllax.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollup/2.4.1/jquery.scrollUp.min.js"></script> -->
 
-  <script src="http://code.jquery.com/jquery-latest.min.js"></script> <!-- jquery cdn -->
-  <script src="./assets/javascripts/jquery.enllax.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollup/2.4.1/jquery.scrollUp.min.js"></script> -->
-
-  <!-- gulp-useref block -->
-  <!-- build:js assets/javascripts/index.js -->
-  <script src="./assets/javascripts/index.js"></script>
-  <!-- endbuild -->
-</body>
+    <!-- gulp-useref block -->
+    <!-- build:js assets/javascripts/index.js -->
+    <script src="./assets/javascripts/index.js"></script>
+    <!-- endbuild -->
+  </body>
 
 </html>
-=======
-gh-pages isn't working..
->>>>>>> origin/gh-pages
