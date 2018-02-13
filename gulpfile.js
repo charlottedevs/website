@@ -77,8 +77,8 @@ gulp.task('watch', function () {
 // });
 
 // Build tasks
-gulp.task('html', () => {
-  runSequence('styles', 'scripts');
+gulp.task('html', ['styles', 'scripts'], () => {
+  // runSequence('styles', 'scripts');
   return gulp.src('./*.html')
     .pipe(useref())
     .pipe(when(/\.js$/, uglify({compress: {drop_console: true}})))
@@ -119,7 +119,7 @@ gulp.task('deploy', function () {
 });
 /* Manual deploy
 *disable default gulp task
-*delete gh-pages branch if need-be `git branch -D gh-pages` 
+*delete gh-pages branch if need-be `git branch -D gh-pages`
 `npm run-script build`
 `git add dist && git commit -m "Initial dist subtree commit"`
 `git subtree push --prefix dist origin gh-pages`
