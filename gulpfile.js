@@ -125,6 +125,6 @@ gulp.task('deploy', function () {
 `git subtree push --prefix dist origin gh-pages`
 */
 
-gulp.task('default', function () {
-    runSequence('clean', 'styles', 'serve', 'watch');
-});
+// gulp.task('default', function () {
+//     runSequence('clean', 'styles', 'serve', 'watch');
+// });
