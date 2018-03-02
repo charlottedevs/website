@@ -1,6 +1,6 @@
 # CJD Website
 
-https://cltdevs.github.io/website/
+https://charlottedevs.github.io/website
 
 ### Purpose
   * Showcase who the group is and what we are about
