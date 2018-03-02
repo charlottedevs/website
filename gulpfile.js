@@ -118,11 +118,16 @@ gulp.task('deploy', function () {
     runSequence('build', 'ghpages');
 });
 /* Manual deploy
-*disable default gulp task
+*disable default gulp task # work-around for gulp build error
 *delete gh-pages branch if need-be `git branch -D gh-pages`
-`npm run-script build`
-`git add dist && git commit -m "Initial dist subtree commit"`
-`git subtree push --prefix dist origin gh-pages`
+  `npm run-script build`
+*re-enable default gulp task
+  `git add dist && git commit -m "Initial dist subtree commit"`
+  `git subtree push --prefix dist origin gh-pages`
+*if the last command is rejected 'because a pushed branch tip is behind its remote', see this gist: https://gist.github.com/tduarte/eac064b4778711b116bb827f8c9bef7b
+  `git subtree split --prefix dist -b gh-pages` # create a local gh-pages branch containing the splitted output folder
+  `git push -f origin gh-pages:gh-pages` # force the push of the gh-pages branch to the remote gh-pages branch at origin
+  `git branch -D gh-pages` # delete the local gh-pages because you will need it: ref
 */
 
 gulp.task('default', function () {
