@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab");
 body {
   font-family: "Roboto Slab", serif, Arial;
-  font-size: 15px;
+  font-size: 0.938em;
   font-weight: normal;
   color: #111; }
 
@@ -42,13 +42,13 @@ p {
 /* Section Title and Subtitle */
 .section-title {
   font-family: "Roboto Slab", serif, Arial;
-  font-size: 34px;
+  font-size: 2.125em;
   font-weight: 700;
   color: #111; }
 
 .section-subtitle {
   font-family: "Roboto", sans-serif, Helvetica;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 300;
   color: #111; }
 
@@ -380,14 +380,9 @@ section {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center;
-    color: #454e57;
-    padding: 40px 0; }
+            align-items: center; }
     #meetups .meetup-container .meetup p {
       width: 100%; }
-    #meetups .meetup-container .meetup:nth-child(2n + 2) {
-      background: #111;
-      color: #fff; }
 
 section#meetups.hidden {
   visibility: hidden;
@@ -425,7 +420,8 @@ section#meetups.hidden {
   margin: auto; }
 
 #sponsors h3 {
-  font-size: 1.1em; }
+  font-size: 1.1em;
+  padding-top: 0.75em; }
 
 #sponsors .sponsors-container {
   display: -webkit-box;

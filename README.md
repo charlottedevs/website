@@ -15,8 +15,6 @@ https://charlottedevs.github.io/website
      - [x] Meetup events calendar (use meetup api)
      - [x] Change meetup call to vanillaJS (John P)
      - [x] Add favicon
-     - [ ] Nav Bar (Carlos)
-     - [ ] Meetup link buttons (Carlos)
      - [ ] Social links (Carlos)
 3. - [x] User sections - Short text descriptions (see note below) about the types of people who would get value from the group
       1. [x] Working Devs
