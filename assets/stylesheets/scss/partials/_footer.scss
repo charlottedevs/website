@@ -22,11 +22,13 @@ footer {
         text-align: center;
         padding: .5em 2em .2em 2em;
         a {
+            display: inline-flex;
             color: $light;
             text-decoration: none;
             margin: 0.75em;
             padding: .65em 1.4em;
             border: 1px solid #d2b356;
+            align-items: center;
         }
         a::before {
             border-left: solid 1px $dark-gray;

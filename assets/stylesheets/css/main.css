@@ -350,7 +350,7 @@ section {
 #meetups h2 {
   width: 100%;
   margin: 0;
-  padding: 2.5em 0em; }
+  padding: 1.25em 0em 0em 0em; }
 
 #meetups h3 {
   padding: 0 20px; }
@@ -380,7 +380,10 @@ section {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    padding: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em; }
     #meetups .meetup-container .meetup p {
       width: 100%; }
 
@@ -560,11 +563,19 @@ footer {
     text-align: center;
     padding: .5em 2em .2em 2em; }
     footer .content-links a {
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
       color: whitesmoke;
       text-decoration: none;
       margin: 0.75em;
       padding: .65em 1.4em;
-      border: 1px solid #d2b356; }
+      border: 1px solid #d2b356;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
     footer .content-links a::before {
       border-left: solid 1px #454E57;
       padding: 2.5em; }

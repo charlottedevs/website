@@ -4,7 +4,7 @@
         margin: 0;
         // background: $gray;
         // color: $dark;
-        padding: 2.5em 0em;
+        padding: 1.25em 0em 0em 0em;
     }
     h3 {
         padding: 0 20px;
@@ -18,7 +18,9 @@
             flex-grow: 1;
             align-items: center;
             // color: #454e57;
-            // padding: 40px 0;
+            padding: 1em;
+            margin-left: 0.5em;
+            margin-right: 0.5em;
             p {
                 width: 100%;
             }

@@ -24,7 +24,7 @@ function logResults(json) {
             var meetupEl = document.querySelector("#meetups");
             meetupEl.classList.remove("hidden");
 
-            for (var i = 0; i < json.data.length; i++) {
+            for (var i = 0; i < 3; i++) {
                 updateLayout(json.data[i]);
             }
         }
