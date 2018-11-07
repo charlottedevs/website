@@ -47,55 +47,7 @@ figure {
     margin: 0;
 }
 
-/* --------- 1.1 Page Border --------- */
-
-.page-border {
-    position: fixed;
-    z-index: 999999;
-    pointer-events: none;
-}
-
-.page-border .bottom-border, .page-border .left-border, .page-border .right-border, .page-border .top-border {
-    background: #f3f3ef;
-    position: fixed;
-    z-index: 9999;
-}
-
-.page-border > .top-border, .page-border > .right-border, .page-border > .bottom-border, .page-border > .left-border {
-    padding: 11px;
-    background: #ccc;
-}
-
-.page-border .bottom-border, .page-border .top-border {
-    width: 100%;
-    padding: 10px;
-    left: 0;
-}
-
-.page-border .left-border, .page-border .right-border {
-    padding: 10px;
-    height: 100%;
-    top: 0;
-}
-
-.page-border {
-    .top-border {
-        top: 0;
-    }
-    .right-border {
-        right: 0;
-    }
-    .bottom-border {
-        bottom: 0;
-    }
-    .left-border {
-        left: 0;
-    }
-}
-
 #wrapper {
-    margin: 0px 15px;
-    padding: 15px 0px;
     position: relative;
 }
 

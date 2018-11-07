@@ -2,32 +2,64 @@
     h2 {
         width: 100%;
         margin: 0;
-        // background: $gray;
-        // color: $dark;
         padding: 1.25em 0em 0em 0em;
-    }
-    h3 {
-        padding: 0 20px;
     }
     .meetup-container {
         display: flex;
         flex-wrap: wrap;
+        max-width: 1245px;
+        margin-right: auto;
+        margin-left: auto;
+
         .meetup {
             display: flex;
+            align-items: center;
             flex-direction: column;
             flex-grow: 1;
-            align-items: center;
-            // color: #454e57;
-            padding: 1em;
-            margin-left: 0.5em;
-            margin-right: 0.5em;
-            p {
+            width: 33.33%;
+            padding: 20px;
+
+            @media only screen and (max-width: 920px) {
                 width: 100%;
             }
-            // &:nth-child(2n + 2) {
-            //     background: $dark;
-            //     color: $white;
-            // }
+
+            &-cont {
+                box-shadow: 0 0 2px rgba(0,0,0,0.25);
+            }
+
+            p,
+            &__title {
+                width: 100%;
+                text-align: left;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+
+            &__title {
+                padding-top: 15px;
+            }
+
+            &__time {
+                color: $gray;
+                padding-left: 15px;
+            }
+
+            &__time,
+            &__location,
+            &__address {
+                letter-spacing: 1px;
+                font-size: 13px;
+            }
+
+            &__info-cont {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding: 5px 15px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                background-color: $gold;
+            }
         }
     }
 }
