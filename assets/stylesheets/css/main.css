@@ -36,8 +36,7 @@ p {
   letter-spacing: .5px;
   line-height: 1.5em;
   text-align: center;
-  font-weight: 300;
-  max-width: 70%; }
+  font-weight: 300; }
 
 /* Section Title and Subtitle */
 .section-title {
@@ -115,46 +114,7 @@ a {
 figure {
   margin: 0; }
 
-/* --------- 1.1 Page Border --------- */
-.page-border {
-  position: fixed;
-  z-index: 999999;
-  pointer-events: none; }
-
-.page-border .bottom-border, .page-border .left-border, .page-border .right-border, .page-border .top-border {
-  background: #f3f3ef;
-  position: fixed;
-  z-index: 9999; }
-
-.page-border > .top-border, .page-border > .right-border, .page-border > .bottom-border, .page-border > .left-border {
-  padding: 11px;
-  background: #ccc; }
-
-.page-border .bottom-border, .page-border .top-border {
-  width: 100%;
-  padding: 10px;
-  left: 0; }
-
-.page-border .left-border, .page-border .right-border {
-  padding: 10px;
-  height: 100%;
-  top: 0; }
-
-.page-border .top-border {
-  top: 0; }
-
-.page-border .right-border {
-  right: 0; }
-
-.page-border .bottom-border {
-  bottom: 0; }
-
-.page-border .left-border {
-  left: 0; }
-
 #wrapper {
-  margin: 0px 15px;
-  padding: 15px 0px;
   position: relative; }
 
 /*------------------------------------------------------------------------------------------*/
@@ -305,7 +265,7 @@ section {
   opacity: 1; }
 
 #landing {
-  background: url("../images/landing.jpeg") center center no-repeat;
+  background: url("../../images/landing.jpeg") center center no-repeat;
   background: url("http://res.cloudinary.com/charlotte-developers/image/upload/dpr_auto,f_auto,q_auto/v1511204771/landing.jpg") center center no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
@@ -352,9 +312,6 @@ section {
   margin: 0;
   padding: 1.25em 0em 0em 0em; }
 
-#meetups h3 {
-  padding: 0 20px; }
-
 #meetups .meetup-container {
   display: -webkit-box;
   display: -webkit-flex;
@@ -362,12 +319,19 @@ section {
   display: flex;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+  max-width: 1245px;
+  margin-right: auto;
+  margin-left: auto; }
   #meetups .meetup-container .meetup {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -377,15 +341,42 @@ section {
     -webkit-flex-grow: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 1em;
-    margin-left: 0.5em;
-    margin-right: 0.5em; }
-    #meetups .meetup-container .meetup p {
-      width: 100%; }
+    width: 33.33%;
+    padding: 20px; }
+    @media only screen and (max-width: 920px) {
+      #meetups .meetup-container .meetup {
+        width: 100%; } }
+    #meetups .meetup-container .meetup-cont {
+      -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+              box-shadow: 0 0 2px rgba(0, 0, 0, 0.25); }
+    #meetups .meetup-container .meetup p, #meetups .meetup-container .meetup__title {
+      width: 100%;
+      text-align: left;
+      padding-right: 15px;
+      padding-left: 15px; }
+    #meetups .meetup-container .meetup__title {
+      padding-top: 15px; }
+    #meetups .meetup-container .meetup__time {
+      color: #708090;
+      padding-left: 15px; }
+    #meetups .meetup-container .meetup__time, #meetups .meetup-container .meetup__location, #meetups .meetup-container .meetup__address {
+      letter-spacing: 1px;
+      font-size: 13px; }
+    #meetups .meetup-container .meetup__info-cont {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 100%;
+      padding: 5px 15px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      background-color: #d2b356; }
 
 section#meetups.hidden {
   visibility: hidden;
@@ -399,7 +390,10 @@ section#meetups.hidden {
   display: flex;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+  max-width: 70%;
+  margin-right: auto;
+  margin-left: auto; }
   #mission .mission-container .mission {
     display: -webkit-box;
     display: -webkit-flex;
@@ -475,12 +469,66 @@ section#meetups.hidden {
   .users img {
     width: 90%;
     margin: 0em auto 1.5em; }
-  .users hr {
-    width: 20%;
-    padding-top: 1px; }
   .users p {
-    margin: auto;
-    max-width: 100%; }
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    max-width: 100%;
+    margin-top: 25px;
+    margin-bottom: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: left; }
+  .users .info-cont {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 25px;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.25); }
+  .users .info__img-cont {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 225px;
+    margin: 0 auto; }
+    .users .info__img-cont img, .users .info__img-cont h3 {
+      position: absolute; }
+    .users .info__img-cont h3 {
+      bottom: 25px;
+      left: 15px;
+      z-index: 2;
+      color: #fff;
+      text-align: left; }
+    .users .info__img-cont img {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+      @supports ((-o-object-fit: cover) or (object-fit: cover)) {
+        .users .info__img-cont img {
+          -o-object-fit: cover;
+             object-fit: cover;
+          -o-object-position: center;
+             object-position: center; } }
+    .users .info__img-cont .img-mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black));
+      background: -webkit-linear-gradient(top, transparent, black);
+      background: -o-linear-gradient(top, transparent, black);
+      background: linear-gradient(to bottom, transparent, black); }
 
 #slack h2 {
   padding-bottom: 0.5em; }
@@ -595,8 +643,6 @@ footer {
       max-height: 250px; }
   .mission p {
     max-width: 80%; }
-  #meetups .meetup-container .meetup p {
-    max-width: 80%; }
   footer .copyright {
     margin-top: 2px; } }
 
@@ -610,14 +656,6 @@ footer {
     width: 100%; }
   .users img {
     min-height: 16.5vw; }
-  .users p {
-    max-width: 75%; }
-  .meetup {
-    -webkit-flex-basis: 50%;
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%; }
-    .meetup p {
-      width: 800px; }
   .mission {
     -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;

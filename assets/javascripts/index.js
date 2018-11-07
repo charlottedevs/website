@@ -14,7 +14,7 @@ function logResults(json) {
     }
 
     function updateLayout(data) {
-        var meetupStr = '<div class="meetup">' + '<h3>' + data.name + '</h3>' + '<h4>' + formatDate(data) + '</h4>' + '<h4>' + data.venue.name + '</h4>' + '<h4>' + data.venue.address_1 + '</h4>' + data.description + '</div>';
+        var meetupStr = '<div class="meetup"><div class="meetup-cont">' + '<h3 class="meetup__title">' + data.name + '</h3>' + '<div class="meetup__info-cont"><h4 class="meetup__location">' + data.venue.name + '</h4>' + '<h4 class="meetup__address">' + data.venue.address_1 + '</h4></div>' + '<h4 class="meetup__time">' + formatDate(data) + '</h4>' + data.description + '</div></div>';
         document.querySelector('.meetup-container').innerHTML += meetupStr;
     }
 

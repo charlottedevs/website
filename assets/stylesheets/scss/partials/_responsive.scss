@@ -19,11 +19,6 @@
             max-width: 80%;
         }
     }
-    #meetups .meetup-container .meetup {
-        p {
-            max-width: 80%;
-        }
-    }
     footer {
         .copyright {
             margin-top: 2px;
@@ -49,15 +44,6 @@
     .users {
         img {
             min-height: 16.5vw;
-        }
-        p {
-            max-width: 75%;
-        }
-    }
-    .meetup {
-        flex-basis: 50%;
-        p {
-            width: 800px;
         }
     }
     .mission {
