@@ -1,0 +1,19 @@
+.btn-outer {
+  border: 3px solid $white;
+  width: 155px;
+  height: 20px;
+  border-top: 0;
+  border-bottom: 0;
+
+  &:hover {
+    width: 130px;
+    transition: width .5s;
+  }
+
+  a[role="button"] {
+    color: $white;
+    background: $gold;
+    border: 2px solid $white;
+    padding: 10px;
+  }
+}
