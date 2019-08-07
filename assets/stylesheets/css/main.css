@@ -74,6 +74,23 @@ form {
   form input[type='submit'] {
     width: 200px; }
 
+.btn-outer {
+  border: 3px solid #fff;
+  width: 155px;
+  height: 20px;
+  border-top: 0;
+  border-bottom: 0; }
+  .btn-outer:hover {
+    width: 130px;
+    -webkit-transition: width .5s;
+    -o-transition: width .5s;
+    transition: width .5s; }
+  .btn-outer a[role="button"] {
+    color: #fff;
+    background: #d2b356;
+    border: 2px solid #fff;
+    padding: 10px; }
+
 /*
 
 1. Defaults
@@ -265,7 +282,7 @@ section {
   opacity: 1; }
 
 #landing {
-  background: url("../../images/landing.jpeg") center center no-repeat;
+  background: url("../images/landing.jpeg") center center no-repeat;
   background: url("http://res.cloudinary.com/charlotte-developers/image/upload/dpr_auto,f_auto,q_auto/v1511204771/landing.jpg") center center no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
@@ -295,7 +312,8 @@ section {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     color: whitesmoke; }
   #landing h2 {
-    padding: 0 20px; }
+    padding: 0 20px;
+    margin-bottom: 30px; }
   #landing:before {
     content: '';
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(52, 49, 60, 0.85)), to(rgba(245, 245, 245, 0.65)));
@@ -306,6 +324,24 @@ section {
     height: 100vh;
     position: absolute;
     z-index: -1; }
+  #landing .landing-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
 
 #meetups h2 {
   width: 100%;
@@ -529,45 +565,6 @@ section#meetups.hidden {
       background: -webkit-linear-gradient(top, transparent, black);
       background: -o-linear-gradient(top, transparent, black);
       background: linear-gradient(to bottom, transparent, black); }
-
-#slack h2 {
-  padding-bottom: 0.5em; }
-
-#slack .slack {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: "Roboto", sans-serif, Helvetica;
-  font-weight: 400; }
-  #slack .slack .form-container {
-    margin: 0.4em 0em 4.75em 0em;
-    max-width: 65%;
-    padding: 3.75em 0em 5em 0em;
-    border-top: 2px solid rgba(17, 17, 17, 0.7);
-    border-bottom: 2px solid rgba(17, 17, 17, 0.7); }
-    #slack .slack .form-container form {
-      border: 3px solid #111; }
-      #slack .slack .form-container form input[type='email'] {
-        color: #111;
-        border-right: 3px solid #111; }
-      #slack .slack .form-container form input[type='submit'] {
-        background: #111;
-        border: 1px solid whitesmoke;
-        color: #fff; }
 
 footer {
   display: -webkit-box;
