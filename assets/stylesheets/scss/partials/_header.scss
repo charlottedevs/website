@@ -1,8 +1,8 @@
 #landing {
-    // background: url("https://source.unsplash.com/collection/145103/computers-phones-and-tech") center center no-repeat;
     background: url(image_path("landing.jpeg")) center center no-repeat; // Fallback
     background: url("http://res.cloudinary.com/charlotte-developers/image/upload/dpr_auto,f_auto,q_auto/v1511204771/landing.jpg") center center no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
     width: 100%;
     height: 100vh;
@@ -12,6 +12,7 @@
     justify-content: center;
     text-align: center;
     z-index: 1;
+
     h1, h2 {
         text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
         color: whitesmoke;

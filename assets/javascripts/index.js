@@ -14,7 +14,22 @@ function logResults(json) {
     }
 
     function updateLayout(data) {
-        var meetupStr = '<div class="meetup"><div class="meetup-cont">' + '<h3 class="meetup__title">' + data.name + '</h3>' + '<div class="meetup__info-cont"><h4 class="meetup__location">' + data.venue.name + '</h4>' + '<h4 class="meetup__address">' + data.venue.address_1 + '</h4></div>' + '<h4 class="meetup__time">' + formatDate(data) + '</h4>' + data.description + '</div></div>';
+        const desc = (data.description.length > 200) ? `${data.description.substring(0, 400)}...` : data.description;
+        var meetupStr = `
+        <div class="meetup">
+            <div class="meetup-cont">
+                <h3 class="meetup__title">${data.name} </h3>
+                <div class="meetup__info-cont">
+                    <h4 class="meetup__location">${data.venue.name}</h4>
+                    <h4 class="meetup__address">${data.venue.address_1}</h4>
+                </div>
+                <h4 class="meetup__time">${formatDate(data)}</h4>
+                <div class="meetup__desc">
+                    ${desc}
+                </div>
+                <a href="${data.link}" class="meetup__link">View On Meetup</a>
+            </div>
+        </div>`;
         document.querySelector('.meetup-container').innerHTML += meetupStr;
     }
 
@@ -57,53 +72,10 @@ function logResults(json) {
     root.fetchJsonP.cbReg = {};
 })(window);
 
-/* Annalisa Alden's AJAX sponsor images */
-
-// function getImages() {
-//     let queryUrl = "."
-//     fetch(queryUrl)
-//     .then(res => {
-//         console.log((res))
-//         // $(res).find("a:contains(.jpg)").each(function () {
-//         //     console.log("yo")
-//         // });
-//     })
-// }
-
-/* jQuery.enllax.js - v1.1.0 | copyright 2015, MMK Jony | https://github.com/mmkjony/enllax.js | released under the MIT license */
-
-!function (t) {
-    "use strict";
-
-    t.fn.enllax = function (r) {
-        var a = t(window).height(),
-            n = t(document).height(),
-            o = t.extend({ ratio: 0, type: "background", direction: "vertical" }, r),
-            e = t("[data-enllax-ratio]");e.each(function () {
-            var r,
-                e,
-                s,
-                i = t(this),
-                c = i.offset().top,
-                l = i.outerHeight(),
-                p = i.data("enllax-ratio"),
-                d = i.data("enllax-type"),
-                x = i.data("enllax-direction");r = p ? p : o.ratio, e = d ? d : o.type, s = x ? x : o.direction;var f = Math.round(c * r),
-                u = Math.round((c - a / 2 + l) * r);"background" == e ? "vertical" == s ? i.css({ "background-position": "center " + -f + "px" }) : "horizontal" == s && i.css({ "background-position": -f + "px center" }) : "foreground" == e && ("vertical" == s ? i.css({ "-webkit-transform": "translateY(" + u + "px)", "-moz-transform": "translateY(" + u + "px)", transform: "translateY(" + u + "px)" }) : "horizontal" == s && i.css({ "-webkit-transform": "translateX(" + u + "px)", "-moz-transform": "translateX(" + u + "px)", transform: "translateX(" + u + "px)" })), t(window).on("scroll", function () {
-                var o = t(this).scrollTop();f = Math.round((c - o) * r), u = Math.round((c - a / 2 + l - o) * r), "background" == e ? "vertical" == s ? i.css({ "background-position": "center " + -f + "px" }) : "horizontal" == s && i.css({ "background-position": -f + "px center" }) : "foreground" == e && n > o && ("vertical" == s ? i.css({ "-webkit-transform": "translateY(" + u + "px)", "-moz-transform": "translateY(" + u + "px)", transform: "translateY(" + u + "px)" }) : "horizontal" == s && i.css({ "-webkit-transform": "translateX(" + u + "px)", "-moz-transform": "translateX(" + u + "px)", transform: "translateX(" + u + "px)" }));
-            });
-        });
-    };
-}(jQuery);
-
 /* DOMContentLoaded */
 document.addEventListener('DOMContentLoaded', function () {
 
     fetchJsonP('https://api.meetup.com/charlottejuniordevs/events?photo-host=public&sig_id=182549128&sig=5e13646fba70874a21074c50827a5e377722fd01').then(function (data) {
         logResults(data);
     });
-    if (!!$.prototype.enllax) {
-        $(window).enllax();
-    }
-    // getImages();
 });
