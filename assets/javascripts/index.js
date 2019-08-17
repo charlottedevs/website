@@ -72,19 +72,6 @@ function logResults(json) {
     root.fetchJsonP.cbReg = {};
 })(window);
 
-/* Annalisa Alden's AJAX sponsor images */
-
-// function getImages() {
-//     let queryUrl = "."
-//     fetch(queryUrl)
-//     .then(res => {
-//         console.log((res))
-//         // $(res).find("a:contains(.jpg)").each(function () {
-//         //     console.log("yo")
-//         // });
-//     })
-// }
-
 /* DOMContentLoaded */
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -94,5 +81,4 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!!$.prototype.enllax) {
         $(window).enllax();
     }
-    // getImages();
 });
