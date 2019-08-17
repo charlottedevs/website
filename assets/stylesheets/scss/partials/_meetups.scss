@@ -2,7 +2,7 @@
     h2 {
         width: 100%;
         margin: 0;
-        padding: 1.25em 0em 0em 0em;
+        padding: 1.25em 0 0 0;
     }
     .meetup-container {
         display: flex;
@@ -12,10 +12,6 @@
         margin-left: auto;
 
         .meetup {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            flex-grow: 1;
             width: 33.33%;
             padding: 20px;
 
@@ -24,19 +20,24 @@
             }
 
             &-cont {
-                box-shadow: 0 0 2px rgba(0,0,0,0.25);
+                display: grid;
+                grid-template-rows: 75px 60px 30px 1fr 30px;
+                box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+                height: 510px;
             }
 
             p,
             &__title {
                 width: 100%;
                 text-align: left;
-                padding-right: 15px;
-                padding-left: 15px;
             }
 
             &__title {
-                padding-top: 15px;
+                padding: 15px;
+            }
+
+            &__desc {
+                padding: 0 15px;
             }
 
             &__time {
@@ -59,13 +60,22 @@
                 margin-top: 5px;
                 margin-bottom: 5px;
                 background-color: $gold;
+                }
+
+            &__link {
+                align-self: flex-end;
+                justify-self: end;
+                padding: 15px;
+                color: $dark;
+                background: $gold;
+                box-shadow: 1px solid rgba(0, 0, 0, 0.25);
             }
         }
     }
-}
 
-section#meetups.hidden {
-    visibility: hidden;
-    height: 2.5em;
-    width: 0;
+    section#meetups.hidden {
+        visibility: hidden;
+        height: 2.5em;
+        width: 0;
+    }
 }
