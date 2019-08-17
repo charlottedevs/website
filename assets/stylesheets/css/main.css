@@ -76,12 +76,12 @@ form {
 
 .btn-outer {
   border: 3px solid #fff;
-  width: 155px;
+  width: 210px;
   height: 20px;
   border-top: 0;
   border-bottom: 0; }
   .btn-outer:hover {
-    width: 130px;
+    width: 180px;
     -webkit-transition: width .5s;
     -o-transition: width .5s;
     transition: width .5s; }
@@ -282,10 +282,11 @@ section {
   opacity: 1; }
 
 #landing {
-  background: url("../images/landing.jpeg") center center no-repeat;
+  background: url("../../images/landing.jpeg") center center no-repeat;
   background: url("http://res.cloudinary.com/charlotte-developers/image/upload/dpr_auto,f_auto,q_auto/v1511204771/landing.jpg") center center no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
+  background-attachment: fixed;
   position: relative;
   width: 100%;
   height: 100vh;
@@ -346,7 +347,7 @@ section {
 #meetups h2 {
   width: 100%;
   margin: 0;
-  padding: 1.25em 0em 0em 0em; }
+  padding: 1.25em 0 0 0; }
 
 #meetups .meetup-container {
   display: -webkit-box;
@@ -360,38 +361,24 @@ section {
   margin-right: auto;
   margin-left: auto; }
   #meetups .meetup-container .meetup {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
     width: 33.33%;
     padding: 20px; }
     @media only screen and (max-width: 920px) {
       #meetups .meetup-container .meetup {
         width: 100%; } }
     #meetups .meetup-container .meetup-cont {
+      display: grid;
+      grid-template-rows: 75px 60px 30px 1fr 30px;
       -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
-              box-shadow: 0 0 2px rgba(0, 0, 0, 0.25); }
+              box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+      height: 510px; }
     #meetups .meetup-container .meetup p, #meetups .meetup-container .meetup__title {
       width: 100%;
-      text-align: left;
-      padding-right: 15px;
-      padding-left: 15px; }
+      text-align: left; }
     #meetups .meetup-container .meetup__title {
-      padding-top: 15px; }
+      padding: 15px; }
+    #meetups .meetup-container .meetup__desc {
+      padding: 0 15px; }
     #meetups .meetup-container .meetup__time {
       color: #708090;
       padding-left: 15px; }
@@ -413,8 +400,18 @@ section {
       margin-top: 5px;
       margin-bottom: 5px;
       background-color: #d2b356; }
+    #meetups .meetup-container .meetup__link {
+      -webkit-align-self: flex-end;
+          -ms-flex-item-align: end;
+              align-self: flex-end;
+      justify-self: end;
+      padding: 15px;
+      color: #111;
+      background: #d2b356;
+      -webkit-box-shadow: 1px solid rgba(0, 0, 0, 0.25);
+              box-shadow: 1px solid rgba(0, 0, 0, 0.25); }
 
-section#meetups.hidden {
+#meetups section#meetups.hidden {
   visibility: hidden;
   height: 2.5em;
   width: 0; }
@@ -528,7 +525,8 @@ section#meetups.hidden {
             flex-direction: column;
     padding-bottom: 25px;
     -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
-            box-shadow: 0 0 2px rgba(0, 0, 0, 0.25); }
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+    height: 510px; }
   .users .info__img-cont {
     overflow: hidden;
     position: relative;
