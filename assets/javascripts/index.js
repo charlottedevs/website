@@ -14,7 +14,22 @@ function logResults(json) {
     }
 
     function updateLayout(data) {
-        var meetupStr = '<div class="meetup"><div class="meetup-cont">' + '<h3 class="meetup__title">' + data.name + '</h3>' + '<div class="meetup__info-cont"><h4 class="meetup__location">' + data.venue.name + '</h4>' + '<h4 class="meetup__address">' + data.venue.address_1 + '</h4></div>' + '<h4 class="meetup__time">' + formatDate(data) + '</h4>' + data.description + '</div></div>';
+        const desc = (data.description.length > 200) ? `${data.description.substring(0, 400)}...` : data.description;
+        var meetupStr = `
+        <div class="meetup">
+            <div class="meetup-cont">
+                <h3 class="meetup__title">${data.name} </h3>
+                <div class="meetup__info-cont">
+                    <h4 class="meetup__location">${data.venue.name}</h4>
+                    <h4 class="meetup__address">${data.venue.address_1}</h4>
+                </div>
+                <h4 class="meetup__time">${formatDate(data)}</h4>
+                <div class="meetup__desc">
+                    ${desc}
+                </div>
+                <a href="${data.link}" class="meetup__link">View On Meetup</a>
+            </div>
+        </div>`;
         document.querySelector('.meetup-container').innerHTML += meetupStr;
     }
 
