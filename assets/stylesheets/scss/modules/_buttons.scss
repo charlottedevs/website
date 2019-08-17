@@ -1,12 +1,12 @@
 .btn-outer {
   border: 3px solid $white;
-  width: 155px;
+  width: 210px;
   height: 20px;
   border-top: 0;
   border-bottom: 0;
 
   &:hover {
-    width: 130px;
+    width: 180px;
     transition: width .5s;
   }
 
