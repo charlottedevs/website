@@ -343,6 +343,8 @@ section {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    #landing .landing-container .slack-badge {
+      margin-top: 30px; }
 
 #meetups h2 {
   width: 100%;
