@@ -74,7 +74,7 @@
   "dependencies": {
     "graceful-fs": "^4.1.11",
     "hoek": "^4.2.1",
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.13",
     "mime": "^1.4.1",
     "minimatch": "^3.0.4"
   }
